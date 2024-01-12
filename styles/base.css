@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
+
 /* main */
 main{
     width: 80%;
@@ -19,7 +20,8 @@ main{
 
 main h2{
     padding: 15px;
-    color: #391D18
+    color: #391D18;
+    font-size: 30px;
 }
 main li{
     list-style-type: none; /* remove bullets */
@@ -76,11 +78,12 @@ nav a {
     font-size: 20px;
     font-weight: bold;
 }
+
 /* sections */
 .card h3 {
     background-color: #B0655E;
     padding: 15px;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 .card{
@@ -89,6 +92,7 @@ nav a {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 20px;
 }
 .card2
 {
@@ -99,9 +103,16 @@ section article{
     padding: 5px;
     margin-bottom: 5px;
 }
+
+/* footer */
 footer{
     background-color: #B0655E;
     width: 100%;
     text-align: center;
+    font-size: 20px;
     padding: 15px;
+}
+footer p{
+    color: #391D18;
+    margin: 10px;
 }
