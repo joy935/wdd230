@@ -5,4 +5,16 @@ body {
 main{
     width: 500px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    grid-column: 1/2;
+    list-style-type: none;
+}
+
+img{
+    width: 240px;
+    height: auto;
 }
