@@ -50,7 +50,7 @@ header{
 }
 
 header h1{
-    color: #391D18;
+    color: black;
     padding: 15px;
     margin-left: 20px;
     font-size: 30px;
@@ -113,6 +113,6 @@ footer{
     padding: 15px;
 }
 footer p{
-    color: #391D18;
+    color:black;
     margin: 10px;
 }
