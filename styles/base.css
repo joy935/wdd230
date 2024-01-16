@@ -20,7 +20,7 @@ main{
 
 main h2{
     padding: 15px;
-    color: #391D18;
+    color: black;
     font-size: 30px;
 }
 main li{
@@ -35,7 +35,7 @@ main li{
 
 /* header */
 header{
-    background-color: #B0655E;
+    background-color: #843524;
     width: 100%;
     display: flex;
     padding: 20px;
@@ -50,7 +50,7 @@ header{
 }
 
 header h1{
-    color: black;
+    color: white;
     padding: 15px;
     margin-left: 20px;
     font-size: 30px;
@@ -74,17 +74,18 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: #391D18;
+    color: black;
     font-size: 20px;
     font-weight: bold;
 }
 
 /* sections */
 .card h3 {
-    background-color: #B0655E;
+    background-color: #843524;
     padding: 15px;
     font-size: 25px;
     margin-bottom: 10px;
+    color: white;
 }
 .card{
     grid-column: 1/2;
@@ -106,13 +107,13 @@ section p{
 
 /* footer */
 footer{
-    background-color: #B0655E;
+    background-color: #843524;
     width: 100%;
     text-align: center;
     font-size: 17px;
     padding: 15px;
 }
 footer p{
-    color: black;
+    color: white;
     margin: 10px;
 }
