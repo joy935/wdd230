@@ -20,11 +20,13 @@ h1 {
 
 main {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 h2 {
 	color: navy;
 	text-align: left;
+	grid-column: 1 / 3;
 }
 
 article p {
