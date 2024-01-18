@@ -22,13 +22,13 @@
         display: flex; /* display sections side-by-side */
         flex-direction: row; /* display sections side-by-side */
         flex-wrap: wrap; /* wrap sections onto new lines */
-        justify-content: space-around;
+        justify-content: space-around; /* space out sections */
     }
     main h2, main hr {
         width: 100%; /* make headings and horizontal rules span the width of the column */
     }
     .card-act {
-        width: 60%;
+        width: 60%; 
     }
     .card-info {
         width: 35%;
