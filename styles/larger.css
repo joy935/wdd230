@@ -18,11 +18,11 @@
         margin: 0 auto;
     }
     /* display main sections as two columns */
-    main {
+    /* main {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
+    } */
     /* main h2 {
         display: block;
     } */
