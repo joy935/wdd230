@@ -87,20 +87,21 @@ nav a {
 }
 
 /* sections */
-.card h3 {
+.card-act h3, .card-info h3 {
     background-color: #843524;
     padding: 15px;
     font-size: 25px;
     margin-bottom: 10px;
     color: white;
 }
-.card{
+.card-act, .card-info{
     grid-column: 1/2;
     background-color: #EBECEB;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-size: 20px;
+    min-width: 300px;
 }
 .card2
 {

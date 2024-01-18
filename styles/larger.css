@@ -22,12 +22,25 @@
         display: flex; /* display sections side-by-side */
         flex-direction: row; /* display sections side-by-side */
         flex-wrap: wrap; /* wrap sections onto new lines */
-        justify-content: space-around; /* space out sections */
+        justify-content: space-around;
     }
     main h2, main hr {
         width: 100%; /* make headings and horizontal rules span the width of the column */
     }
-    main section {
-        width: 48%; /* make sections span half the width of the column */
+    /* main section {
+        width: 45%;
+    } */
+    .card-act {
+        width: 60%;
     }
+    .card-info {
+        width: 20%;
+    }
+    /* section:first-child {
+        width: 60%;
+    } */
+    /* section:last-child {
+        width: 20%;
+    } */
+   
 }
