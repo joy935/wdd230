@@ -23,6 +23,14 @@ main h2{
     color: black;
     font-size: 30px;
 }
+main hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
 main li{
     list-style-type: none; /* remove bullets */
     padding: 10px;
