@@ -27,20 +27,10 @@
     main h2, main hr {
         width: 100%; /* make headings and horizontal rules span the width of the column */
     }
-    /* main section {
-        width: 45%;
-    } */
     .card-act {
         width: 60%;
     }
     .card-info {
         width: 20%;
     }
-    /* section:first-child {
-        width: 60%;
-    } */
-    /* section:last-child {
-        width: 20%;
-    } */
-   
 }
