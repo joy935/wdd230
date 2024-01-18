@@ -1,5 +1,5 @@
 /* horizontal navigation bar for larger screens */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
     nav #menu {
         display: flex;
         flex-direction: row;
