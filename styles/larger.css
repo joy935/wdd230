@@ -7,9 +7,6 @@
     padding: 7px;
     margin-left: 10px;
   }
-  nav a {
-    font-size: 10px;
-  }
   .card h3 {
     padding: 7px;
     margin-bottom: 5px; 
@@ -17,7 +14,6 @@
   .card {
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 10px;
   }
   section p {
     padding: 2px;
