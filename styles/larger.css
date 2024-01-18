@@ -1,5 +1,5 @@
-/* horizontal navigation bar for larger screens */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 640px) {
+    /* horizontal navigation bar */
     nav #menu {
         display: flex;
         flex-direction: row;
@@ -7,12 +7,14 @@
         padding: 5px;
         margin-bottom: 5px;
     }
+    /* adjust padding and margin */
     nav a {
         padding: 5px;
         margin-bottom: 5px;
     }
-    /* nav a:hover {
-        background-color: #ddd;
-        color: black;
-    } */
+    /* fix width of header, nav and footer */
+    header, nav, footer {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
