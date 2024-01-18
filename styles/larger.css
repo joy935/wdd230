@@ -16,31 +16,3 @@
         color: black;
     } */
 }
-
-/* reduce the padding and magins for smaller screens */
-@media screen and (max-width: 500px) {
-    header h1 {
-      padding: 7px;
-      margin-left: 10px;
-    }
-    main h2 {
-      padding: 7px;
-      margin-left: 10px;
-    }
-    .card h3 {
-      padding: 7px;
-      margin-bottom: 5px; 
-    }
-    .card {
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    section p {
-      padding: 2px;
-      margin-bottom: 2px;
-    }
-    footer {
-      padding: 5px;
-      margin-bottom: 5px;
-    }
-  }
