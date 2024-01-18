@@ -17,6 +17,12 @@
         max-width: 90%;
         margin: 0 auto;
     }
+
+    /* add shadow box to sections */
+    .card-act, .card-info {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
     /* display main sections as two columns */
     main {
         display: flex; /* display sections side-by-side */
