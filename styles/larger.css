@@ -2,19 +2,16 @@
   header h1 {
     padding: 7px;
     margin-left: 10px;
-    font-size: 15px;
   }
   main h2 {
     padding: 7px;
     margin-left: 10px;
-    font-size: 15px;
   }
   nav a {
     font-size: 10px;
   }
   .card h3 {
     padding: 7px;
-    font-size: 15px;
     margin-bottom: 5px; 
   }
   .card {
@@ -29,6 +26,5 @@
   footer {
     padding: 5px;
     margin-bottom: 5px;
-    font-size: 10px;
   }
 }
