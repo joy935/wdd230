@@ -1,10 +1,10 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
     /* horizontal navigation bar */
     nav #menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 5px;
+        display: flex; /* display links side-by-side */
+        flex-direction: row; /* display links side-by-side */
+        justify-content: space-around; /* space out links */
+        padding: 5px; 
         margin-bottom: 5px;
     }
     /* adjust padding and margin */
@@ -19,12 +19,15 @@
     }
     /* display main sections as two columns */
     main {
-        display: flex;
-        flex-direction: colomn;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: flex; /* display sections side-by-side */
+        flex-direction: row; /* display sections side-by-side */
+        flex-wrap: wrap; /* wrap sections onto new lines */
+        justify-content: space-around; /* space out sections */
     }
     main h2, main hr {
-        width: 100%;
+        width: 100%; /* make headings and horizontal rules span the width of the column */
+    }
+    main section {
+        width: 48%; /* make sections span half the width of the column */
     }
 }
