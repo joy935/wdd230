@@ -15,7 +15,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 10px;
+    gap: 20px;;
 }
 
 main h2{
@@ -41,7 +41,6 @@ main li{
     width: 80%;
     text-align: left;
 }
-
 /* header */
 header{
     background-color: #843524;
@@ -72,7 +71,6 @@ nav {
 }
 nav ul {
     list-style-type: none; /* remove bullets */
-    /* display: flex; */
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -18,12 +18,13 @@
         margin: 0 auto;
     }
     /* display main sections as two columns */
-    /* main {
+    main {
         display: flex;
-        flex-direction: row;
+        flex-direction: colomn;
+        flex-wrap: wrap;
         justify-content: space-around;
-    } */
-    /* main h2 {
-        display: block;
-    } */
+    }
+    main h2, main hr {
+        width: 100%;
+    }
 }
