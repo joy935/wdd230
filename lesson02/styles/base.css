@@ -13,10 +13,14 @@ header {
 
 /* main */
 main {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
     justify-content: space-around;
     padding: 20px;
+}
+section {
+    margin: 10px;
 }
 .card {
     background-color: hsl(0, 7%, 95%);
