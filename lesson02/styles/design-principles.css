@@ -6,8 +6,25 @@ body {
     max-width: 1200px; /* change if necessary */
     margin: 0 auto;
 }
+/* header */
 header {
     background-color: #171a66;
     color: white;
     text-align: center;
+    padding: 1px;
+}
+/* main */
+main {
+    display: flex;
+}
+section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* footer */
+footer {
+    background-color: #171a66;
+    color: white;
+    text-align: center;
+    padding: 1px;
 }
