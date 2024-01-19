@@ -13,14 +13,24 @@ header {
     text-align: center;
     padding: 1px;
 }
+
 /* main */
 main {
     display: flex;
 }
-section {
+.card {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    
 }
+h3 {
+    text-align: center;
+    background-color: #2c2c2e;
+    color: white;
+    padding: 5px;
+}
+
 /* footer */
 footer {
     background-color: #171a66;
