@@ -39,7 +39,9 @@
     .card-info {
         width: 35%;
     }   
+    
+    /* hide hamburger button in larger screens */
     #hbmenu {
-		display: none; /* hide hamburger button */
+		display: none;
 	}
 }
