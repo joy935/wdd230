@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 900px) {
     /* horizontal navigation bar */
     nav #menu {
         display: flex; /* display links side-by-side */
@@ -41,13 +41,5 @@
     }   
     #hbmenu {
 		display: none; /* hide hamburger button */
-	}
-    .navigation {
-		flex-direction: row;
-	}
-
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
 	}
 }
