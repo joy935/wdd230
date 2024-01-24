@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1100px) {
     /* horizontal navigation bar */
-    nav #menu {
+    nav #ulist {
         display: flex; /* display links side-by-side */
         flex-direction: row; /* display links side-by-side */
         justify-content: space-around; /* space out links */
