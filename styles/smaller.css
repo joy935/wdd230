@@ -1,45 +1,6 @@
-/* reduce the padding and magins for smaller screens */
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 500px) {
     /* responsive menu */
-    #menu {
-      font-size: 1.5rem;
-      position: relative; /* absolute ? */
-      top: 1rem;
-      left: 1rem;
-    }
-    #menu::before {
-      content: "☰";  
-    }
-    #menu.open::before {
-      content: "✖";
-    }
-    .navigation {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      background-color: #EBECEB;
-      color: black;
-    }
-    .navigation a {
-      display: none;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      color: #1b1c4a;
-    }
-    .navigation a:hover {
-      background-color: #bbb;
-      color: #333;
-      font-weight: 700;
-    }
-    .open a {
-      display: block;
-    }
-    
-    .active::before {
-      content: "📍";
-    }
-    .active {
-      font-weight: bold;
-    }
+  header {
+    background-color: aqua;
   }
+}
