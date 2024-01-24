@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
     /* horizontal navigation bar */
     nav #menu {
         display: flex; /* display links side-by-side */
@@ -38,5 +38,5 @@
     }
     .card-info {
         width: 35%;
-    }
+    }   
 }
