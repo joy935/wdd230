@@ -1,36 +1,49 @@
 /* reduce the padding and magins for smaller screens */
-@media screen and (max-width: 500px) {
-    header h1 {
-      padding: 7px;
-      margin-left: 10px;
-    }
-    main h2 {
-      padding: 7px;
-      margin-left: 10px;
-    }
-    .card h3 {
-      padding: 7px;
-      margin-bottom: 5px; 
-    }
-    .card {
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    section p {
-      padding: 2px;
-      margin-bottom: 2px;
-    }
-    footer {
-      padding: 5px;
-      margin-bottom: 5px;
-    }
+@media screen and (min-width: 400px) {
     /* responsive menu */
     #menu {
-      position: absolute;
+      font-size: 1.5rem
+      /* border: 1px solid rgba(0,0,0,.3); */
+      /* padding: 3px 7px 6px; */
+      /* background-color: #eee; */
+      /* color: #000; */
+      position: relative; /* absolute ? */
       top: 1rem;
-      left:1rem;
+      left: 1rem;
     }
     #menu::before {
-      content: "⌯"
+      content: "☰";  
+    }
+    #menu.open::before {
+      content: "✖";
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: #EBECEB;
+      color: black;
+    }
+    .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #1b1c4a;
+    }
+    .navigation a:hover {
+      background-color: #bbb;
+      color: #333;
+      font-weight: 700;
+    }
+    .open a {
+      display: block;
+    }
+    
+    .active::before {
+      content: "📍";
+    }
+    .active {
+      font-weight: bold;
     }
   }
