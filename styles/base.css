@@ -84,7 +84,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -128,3 +128,39 @@ footer p{
     color: white;
     margin: 10px;
 }
+
+/* responsive menu for smaller screens */
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    padding: 3px 7px 6px;
+  }
+  #menu::before {
+    content: "☰";
+  }
+  #menu.open::before {
+    content: "✖";
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: #EBECEB;
+  }
+  nav a:hover {
+    background-color: #843524;
+    color: white;
+  }
+  .open nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .open a {
+    display: block;
+  }
+  .active::before {
+    content: "👉";
+    padding-right: 0.5rem;
+  }
