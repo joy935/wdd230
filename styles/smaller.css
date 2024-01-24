@@ -24,4 +24,13 @@
       padding: 5px;
       margin-bottom: 5px;
     }
+    /* responsive menu */
+    #menu {
+      position: absolute;
+      top: 1rem;
+      left:1rem;
+    }
+    #menu::before {
+      content: "⌯"
+    }
   }
