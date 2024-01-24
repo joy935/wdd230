@@ -44,4 +44,7 @@
     #hbmenu {
 		display: none;
 	}
+    nav a {
+        display: block;
+    }
 }
