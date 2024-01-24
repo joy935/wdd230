@@ -2,11 +2,7 @@
 @media screen and (min-width: 400px) {
     /* responsive menu */
     #menu {
-      font-size: 1.5rem
-      /* border: 1px solid rgba(0,0,0,.3); */
-      /* padding: 3px 7px 6px; */
-      /* background-color: #eee; */
-      /* color: #000; */
+      font-size: 1.5rem;
       position: relative; /* absolute ? */
       top: 1rem;
       left: 1rem;
