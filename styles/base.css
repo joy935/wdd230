@@ -68,7 +68,6 @@ header h1{
 
 /* navigation bar */
 nav {
-    background-color: #EBECEB;
     width: 100%;
 }
 nav ul {
@@ -130,6 +129,7 @@ footer p{
 }
 
 /* responsive menu for smaller screens */
+/* hamburger menu */
 #hbmenu {
     font-size: 1.5rem;
     padding: 3px 7px 6px;
@@ -140,9 +140,11 @@ footer p{
 	top: 1rem;
 	right: 1rem;
 }
+/* open icon */
 #hbmenu::before {
 	content: "☰";
 }
+/* close icon */
 #hbmenu.open::before {
 	content: "✖";
 }
@@ -150,21 +152,30 @@ nav {
     display: flex;
     flex-direction: column;
     list-style: none;
+    background-color: #EBECEB;
 }
+/* hide navigation menu */
 nav a {
     display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
 }
+/* style hover effect */
 nav a:hover {
     background-color: #bbb;
     color: #333;
     font-weight: 700;
 }
+/* Set background color to transparent when menu is closed */
+/* nav:not(.open) {
+    background-color: transparent; 
+} */
+/* show navigation menu when hamburger menu is clicked */
 .open a {
 	display: block;
 }
+/* display icon beside the open menu item */
 .active::before {
 	content: "👉"; 
     padding-right: 1rem;
