@@ -175,8 +175,12 @@ nav a:hover {
 .open a {
 	display: block;
 }
-/* display icon beside the open menu item */
+/* display icon around the open menu item using CSS pseudo-elements */
 .active::before {
-	content: "👉"; 
-    padding-right: 1rem;
+	content: "| "; 
+    /* padding-right: 1rem; */
+}
+.active::after {
+    content: " |"; 
+    /* padding-left: 1rem; */
 }
