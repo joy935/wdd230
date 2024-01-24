@@ -39,4 +39,15 @@
     .card-info {
         width: 35%;
     }   
+    #hbmenu {
+		display: none; /* hide hamburger button */
+	}
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
 }
