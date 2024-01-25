@@ -70,16 +70,6 @@ header h1{
 nav {
     width: 100%;
 }
-nav ul {
-    list-style-type: none; /* remove bullets */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-nav li {
-    padding: 5px;
-    text-align: center;
-}
 nav a {
     text-decoration: none;
     color: black;
@@ -130,7 +120,7 @@ footer p{
 
 /* responsive menu for smaller screens */
 /* hamburger menu */
-#hbmenu {
+#menu {
     font-size: 1.5rem;
     padding: 3px 7px 6px;
     border: 1px solid rgba(0,0,0,.3);
@@ -141,11 +131,11 @@ footer p{
 	right: 1rem;
 }
 /* open icon */
-#hbmenu::before {
+#menu::before {
 	content: "☰";
 }
 /* close icon */
-#hbmenu.open::before {
+#menu.open::before {
 	content: "✖";
 }
 nav {
@@ -167,10 +157,7 @@ nav a:hover {
     color: #333;
     font-weight: 700;
 }
-/* Set background color to transparent when menu is closed */
-/* nav:not(.open) {
-    background-color: transparent; 
-} */
+
 /* show navigation menu when hamburger menu is clicked */
 .open a {
 	display: block;
