@@ -1,16 +1,16 @@
 @media only screen and (min-width: 900px) {
     /* horizontal navigation bar */
-    nav #menu {
+    nav {
         display: flex; /* display links side-by-side */
         flex-direction: row; /* display links side-by-side */
         justify-content: space-around; /* space out links */
-        /* padding: 5px;  */
-        /* margin-bottom: 5px; */
+        padding: 5px; 
+        margin-bottom: 5px;
     }
     /* adjust padding and margin */
     nav a {
         padding: 15px;
-        /* margin-bottom: 5px; */
+        margin-bottom: 5px;
         display: block;
     }
     /* fix width of header, nav and footer */
@@ -42,7 +42,7 @@
     }   
     
     /* hide hamburger button in larger screens */
-    #hbmenu {
+    #menu {
 		display: none;
 	}
 }
