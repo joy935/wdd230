@@ -4,14 +4,13 @@
         display: flex; /* display links side-by-side */
         flex-direction: row; /* display links side-by-side */
         justify-content: space-around; /* space out links */
-        padding: 5px; 
+        list-style: none;
         margin-bottom: 5px;
     }
     /* adjust padding and margin */
     nav a {
-        padding: 15px;
-        margin-bottom: 5px;
         display: block;
+        flex: 1 1 100%; /* make links span the width of the column */
     }
     /* fix width of header, nav and footer */
     header, nav, footer {
