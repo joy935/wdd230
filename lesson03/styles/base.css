@@ -52,6 +52,9 @@ section {
 .highlight {
     background-color: #A69b83;
 }
+ul li {
+    list-style-type: none;
+}
 p {
     padding: 10px;
     text-align: left;
