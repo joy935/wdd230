@@ -46,7 +46,8 @@ h1, h2, h3, h4 {
 h2 {
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--headline-color-on-color)
+    color: var(--headline-color-on-color);
+    padding: 1rem;
 }
 hr {
     height: 3px;
