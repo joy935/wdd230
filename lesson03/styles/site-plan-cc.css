@@ -86,9 +86,11 @@ p {
     height: 3em;
 }
 .primary {
+    color: white;
     background-color: var(--primary-color);
 }
 .secondary {
+    color: white;
     background-color: var(--secondary-color);
 }
 .accent1 {
