@@ -63,9 +63,12 @@ header{
     text-align: center;
     background-color: var(--secondary-color);
 }
-header h1, header h3 {
+header h1, header h2, header h3 {
     color: var(--headline-color-on-color);
 
+}
+#special {
+    background-color: var(--paragraph-color-on-color);
 }
 p {
     font-family: var(--paragraph-font);
