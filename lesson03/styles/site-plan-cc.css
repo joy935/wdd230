@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #274F32   ;
+  --secondary-color: #0B261A ;
+  --accent1-color: #E9F1EE;
+  --accent2-color: #A69B83;
+
+  --heading-font: "Castoro Titling", Georgia, serif;
+  --paragraph-font: "Inter Tight", Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #0B261A;  /* headlines on a white background */ 
+  --headline-color-on-color: #E9F1EE; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #0B261A; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #E9F1EE; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #E9F1EE  ; 
+  --nav-link-color: #A69B83; 
+  --nav-background-color: #0B261A; 
+  --nav-hover-link-color: black; 
+  --nav-hover-background-color: #A69B83;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -65,5 +88,4 @@ footer {
     padding: 20px;
     text-align: center;
     background-color: #0B261A;
-    color: white;
 }
