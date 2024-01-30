@@ -41,3 +41,9 @@ h1, h2, h3 {
     padding: 20px;
     font-size: 18px;
 }
+
+/* div hero */
+#hero img {
+    width: 100%;
+    height: auto;
+}
