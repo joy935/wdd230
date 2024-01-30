@@ -47,3 +47,12 @@ h1, h2, h3 {
     width: 100%;
     height: auto;
 }
+
+/* footer */
+footer {
+    background-color: #0B261A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
