@@ -1,8 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     max-width: 1600px;
     margin: 0 auto;
     font-family: 'Noto Sans', sans-serif;
 }
+
+/* header */
 header img {
     width: 100px;
     height: auto;
@@ -18,7 +26,18 @@ header {
     gap: 10px;
     justify-content: left;
 }
-
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
+}
+
+/* navigation */
+.navigation {
+    background-color: #E9F1EE;
+    display: flex;
+}
+.navigation a {
+    color: #0B261A;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
 }
