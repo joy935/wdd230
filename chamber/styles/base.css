@@ -76,6 +76,18 @@ h1, h2, h3 {
 .active::before {
     content: "> ";
 }
+/* call to action JOIN button */
+#join {
+    background-color: #A69B83;
+    color: #0B261A;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
 
 /* div hero */
 #hero {
