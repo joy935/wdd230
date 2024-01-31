@@ -139,6 +139,19 @@ h1, h2, h3 {
     padding: 10px;
 
 }
+.event-card {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+}
+.event-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px;
+}
+
 .spotlight-card {
     display: flex;
     padding: 15px;
