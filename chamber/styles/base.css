@@ -111,21 +111,17 @@ h1, h2, h3 {
 
 /* main */
 .home-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
 }
-
 #background {
     background-color: #E9F1EE;
     padding: 20px;
 }
-
-
 /* footer */
 footer {
     background-color: #0B261A;
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 18px;
 }
