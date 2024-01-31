@@ -79,7 +79,7 @@ h1, h2, h3 {
 /* call to action JOIN button */
 #join {
     background-color: #A69B83;
-    color: #0B261A;
+    color: black;
     padding: 10px;
     border-radius: 10px;
     font-size: 18px;
@@ -108,6 +108,9 @@ h1, h2, h3 {
     background-color: #E9F1EE; /* add transparent background */
     padding: 10px;
 }
+
+/* main */
+
 
 
 /* footer */
