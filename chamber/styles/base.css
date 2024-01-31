@@ -9,6 +9,11 @@ body {
     margin: 0 auto;
     font-family: 'Noto Sans', sans-serif;
 }
+main img {
+    width: 200px;
+    height: auto;
+
+}
 
 /* header */
 header img {
@@ -93,7 +98,7 @@ h1, h2, h3 {
     align-items: center;
     position: relative;
 }
-#hero img {
+.hero-img {
     width: 100%;
     height: auto;
 }
