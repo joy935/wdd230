@@ -120,14 +120,20 @@ h1, h2, h3 {
 .discover-box, .event-box, .plein-feux {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     padding: 20px;
     gap: 10px;
 }
 .event-box {
     background-color: #E9F1EE;
+    align-items: center;
 }
+.about-card, .news-card, .weather-card, .spotlight-card, .spotlight-o-card {
+    display: block;
+    text-align: center;
+}
+
 /* footer */
 footer {
     background-color: #0B261A;
