@@ -110,8 +110,47 @@ h1, h2, h3 {
 }
 
 /* main */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+#background {
+    background-color: #E9F1EE;
+    padding: 20px;
+}
 
+.city-card {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+}
+.city-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.weather-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+.spotlight-card {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+}
+.spotlight-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
 /* footer */
 footer {
