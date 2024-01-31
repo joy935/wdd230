@@ -112,6 +112,8 @@ h1, h2, h3 {
 /* main */
 .home-grid {
     display: grid;
+    /* grid-template-columns: (auto-fit, minmax(300px, 1fr)); */
+
 }
 #background {
     background-color: #E9F1EE;
