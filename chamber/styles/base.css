@@ -111,12 +111,36 @@ h1, h2, h3 {
 
 /* main */
 .home-grid {
-    display: flex;
-    flex-direction: row;
+    display: grid;
 }
 #background {
     background-color: #E9F1EE;
     padding: 20px;
+}
+.discover-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.event-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.plein-feux {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+
 }
 /* footer */
 footer {
