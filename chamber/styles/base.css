@@ -132,6 +132,7 @@ h1, h2, h3 {
 .about-card, .news-card, .weather-card, .spotlight-card, .spotlight-o-card {
     display: block;
     text-align: center;
+    padding: 20px;
 }
 
 /* footer */
