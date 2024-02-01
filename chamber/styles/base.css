@@ -123,8 +123,8 @@ h1, h2, h3 {
 .discover-box, .event-box, .plein-feux {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
     gap: 10px;
 }
@@ -135,6 +135,7 @@ h1, h2, h3 {
 .about-card, .news-card, .weather-card, .spotlight-card, .spotlight-o-card {
     display: block;
     text-align: center;
+    
     padding: 20px;
 }
 
