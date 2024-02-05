@@ -26,6 +26,8 @@ button.addEventListener('click', () => {
             input.focus();
             input.value = '';
         });
+
+        input.focus();
     }
     });
 
