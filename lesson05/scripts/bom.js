@@ -38,22 +38,23 @@ input.addEventListener('keyup', (e) => {
 });
 
 // prevent duplicate list items
-input.addEventListener('input', () => {
-    const chapters = list.querySelectorAll('li');
-    let isDuplicate = false;
+// input.addEventListener('blur', () => {
+//     const chapters = Array.from(list.querySelectorAll('li'));
+//     let isDuplicate = false;
 
-    chapters.forEach(chapter => {
-        if (input.value.toLowerCase() === chapter.textContent.toLowerCase()) {
-            isDuplicate = true;
-        }
-    });
-
-    if (isDuplicate) {
-        button.disabled = true;
-        input.classList.add('error');
-    }
-    else {
-        button.disabled = false;
-        input.classList.remove('error');
-    }
-});
+//     chapters.forEach(chapter => {
+//         if (input.value.toLowerCase() === chapter.textContent.toLowerCase()) {
+//             isDuplicate = true;
+//         }
+//     });
+//     if (isDuplicate) {
+//         console.log('Duplicate chapter');
+//         button.disabled = true;
+//         input.classList.add('error');
+//     }
+//     else {
+//         console.log('Unique chapter');
+//         button.disabled = false;
+//         input.classList.remove('error');
+//     }
+// });
