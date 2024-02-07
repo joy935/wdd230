@@ -20,4 +20,10 @@
         width: 60px;
         height: 34px;
     }
+
+    /*  calculate the right position for the 
+    .switch element based on the screen width */
+    .switch {
+        right: calc((100% - 1400px) / 2 + 1rem);
+    }
 }
