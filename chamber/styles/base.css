@@ -80,8 +80,11 @@ h1, h2, h3 {
 
 /* toggle switch */
 .switch {
-    position: relative;
+    /* position: relative; */
+    position: absolute;
     display: inline-block;
+    top: 4rem;
+    right: 1rem;
     width: 60px;
     height: 34px;
 }
