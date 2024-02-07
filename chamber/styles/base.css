@@ -77,18 +77,6 @@ h1, h2, h3 {
 .active::before {
     content: "> ";
 }
-/* call to action JOIN button */
-#join {
-    background-color: #A69B83;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 700;
-    position: absolute;
-    top: 4rem;
-    right: 1rem;
-}
 
 /* div hero */
 #hero {
@@ -104,10 +92,21 @@ h1, h2, h3 {
 }
 #hero h2 {
     position: absolute;
-    bottom: 50px;
+    bottom: 90px;
     color: #0B261A;
     background-color: #E9F1EE; /* add transparent background */
     padding: 10px;
+}
+/* call to action JOIN button */
+#join {
+    background-color: #A69B83;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+
+    position: absolute;
+    bottom: 40px;
 }
 
 /* main */
