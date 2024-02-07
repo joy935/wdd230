@@ -9,6 +9,6 @@ darkMode.addEventListener('change', () => {
 	} 
     else {
         body.classList.remove('dark-style');
-        boxevent.style.background = '#OB261A';
+        boxevent.style.background = '#E9F1EE';
     }
 });
