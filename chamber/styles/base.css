@@ -190,6 +190,11 @@ input:checked + .slider:before {
     padding: 20px;
 }
 
+.contact {
+    color: #274F34;
+    font-weight: bold;
+}
+
 /* dark mode styles */
 .dark-style {
     background-color: #000;
