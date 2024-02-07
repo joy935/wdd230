@@ -79,8 +79,11 @@ h1, h2, h3 {
 }
 
 /* toggle switch */
+.switch-box {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .switch {
-    /* position: relative; */
     position: absolute;
     display: inline-block;
     top: 4rem;
