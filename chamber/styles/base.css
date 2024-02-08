@@ -193,8 +193,6 @@ h3 {
 }
 .news-card {
     grid-column: 2 / 3;
-    border: 1px solid #274F32;
-
 }
 .weather-card {
     grid-column: 3 / 4;
@@ -217,7 +215,6 @@ h3 {
 }
 .spotlight-2-card {
     grid-column: 2 / 3;
-    border: 1px solid #274F32;
 }
 .spotlight-3-card {
     grid-column: 3 / 4;
