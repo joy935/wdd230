@@ -204,6 +204,7 @@ h3 {
     background-color: #E9F1EE;
     align-items: center;
 }
+
 .plein-feux {
     grid-row: 3 / 4;
     display: grid;
@@ -211,12 +212,15 @@ h3 {
 }
 .spotlight-1-card {
     grid-column: 1 / 2;
+    border: 1px solid #274F32;
 }
 .spotlight-2-card {
     grid-column: 2 / 3;
+    border: 1px solid #274F32;
 }
 .spotlight-3-card {
     grid-column: 3 / 4;
+    border: 1px solid #274F32;
 }
 
 .about-card, .news-card, .weather-card, .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
