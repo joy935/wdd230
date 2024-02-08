@@ -199,10 +199,11 @@ h3 {
 }
 
 .events-box {
-    display: flex;
+    display: grid;
     grid-row: 2 / 3;
     background-color: #E9F1EE;
     align-items: center;
+    text-align: center;
 }
 
 .plein-feux {
