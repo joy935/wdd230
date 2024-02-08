@@ -206,6 +206,9 @@ h3 {
     align-items: center;
     text-align: center;
 }
+#event-img {
+    text-align: center; /* center the image */
+}
 
 .plein-feux {
     grid-row: 3 / 4;
