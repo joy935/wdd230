@@ -187,7 +187,6 @@ h3 {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* padding-top: 20px; */
 }
 .about-card {
     grid-column: 1 / 2;
