@@ -12,7 +12,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 main img {
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
@@ -228,6 +228,7 @@ h3 {
 
 .about-card, .news-card, .weather-card, .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
     text-align: center;
+    padding: 20px;
 }
 
 .contact {
