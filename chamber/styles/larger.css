@@ -24,7 +24,10 @@
         height: 34px;
     }
 
-
+    main img {
+        width: 300px;
+        height: auto;
+    }
 
     .events-box {
         display: flex;
