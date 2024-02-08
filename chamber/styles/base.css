@@ -207,7 +207,8 @@ h3 {
     text-align: center;
 }
 #event-img {
-    text-align: center; /* center the image */
+    display: block;
+    margin: 0 auto; /* center the image horizontally */
 }
 
 .plein-feux {
