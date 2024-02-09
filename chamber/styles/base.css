@@ -176,7 +176,7 @@ h3 {
 
 .home-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
 .discover-box, .events-box, .plein-feux {
@@ -185,7 +185,7 @@ h3 {
 }
 
 .discover-box {
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -201,7 +201,7 @@ h3 {
 
 .events-box {
     display: grid;
-    grid-row: 2 / 3;
+    /* grid-row: 2 / 3; */
     background-color: #E9F1EE;
     align-items: center;
     text-align: center;
@@ -212,7 +212,7 @@ h3 {
 }
 
 .plein-feux {
-    grid-row: 3 / 4;
+    /* grid-row: 3 / 4; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
