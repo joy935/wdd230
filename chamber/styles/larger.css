@@ -33,8 +33,23 @@
         align-items: center;
     }
 
+    /* imgages */
     main img {
         width: 300px;
         height: auto;
+    }
+
+    /* responsive footer */
+    footer {
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        text-align: center;
+    }
+    .logo-footer {
+        grid-column: 1 / 2;
+    }
+    
+    .info-author {
+        grid-column: 2 / 4;
     }
 }
