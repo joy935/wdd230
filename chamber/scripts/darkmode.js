@@ -7,7 +7,7 @@ darkMode.addEventListener('change', () => {
     if (darkMode.checked) {
 		body.classList.add('dark-style');
         boxevent.style.background = '#333333';
-        contact.style.background = '#333333';
+        contact.style.color = '#000';
 	} 
     else {
         body.classList.remove('dark-style');
