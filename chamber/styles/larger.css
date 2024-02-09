@@ -33,6 +33,12 @@
         align-items: center;
     }
 
+    /* remove border and shadow from spotlight cards */
+    .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
+        border: none;
+        box-shadow: none;
+    }
+
     /* imgages */
     main img {
         width: 300px;
@@ -52,4 +58,7 @@
     .info-author {
         grid-column: 2 / 4;
     }
+
+    hr {
+        display: none;
 }
