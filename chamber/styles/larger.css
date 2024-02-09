@@ -32,4 +32,9 @@
         background-color: #E9F1EE;
         align-items: center;
     }
+
+    main img {
+        width: 300px;
+        height: auto;
+    }
 }
