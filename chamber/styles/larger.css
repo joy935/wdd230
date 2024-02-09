@@ -12,6 +12,7 @@
     #menu {
         display: none;
     }
+    /* toggle switch */
     header {
         position: relative;
     }
@@ -23,12 +24,8 @@
         width: 60px;
         height: 34px;
     }
-
-    main img {
-        width: 250px;
-        height: auto;
-    }
-
+   
+   /* responsive grid */ 
     .events-box {
         display: flex;
         grid-row: 2 / 3;
