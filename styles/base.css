@@ -77,6 +77,12 @@ nav a {
     font-weight: bold;
 }
 
+/* hero img */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 /* sections */
 .card-act h3, .card-info h3 {
     background-color: #843524;
