@@ -15,7 +15,6 @@ body {
 
 /* main */
 main{
-    
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -89,7 +88,7 @@ nav a {
 }
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 /* hero text */
 .hero-label {
@@ -118,7 +117,6 @@ nav a {
 .card-act, .card-info{
     grid-column: 1/2;
     background-color: #EBECEB;
-    /* padding: 20px; */
     margin-bottom: 20px;
     font-size: 20px;
     min-width: 300px;
