@@ -86,7 +86,6 @@ nav a {
 /* hero img */
 .hero {
     position: relative;
-    border: 1px solid rgba(0,0,0,.1);
 }
 .hero img {
     width: 100%;
