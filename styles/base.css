@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -78,9 +80,27 @@ nav a {
 }
 
 /* hero img */
+.hero {
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+}
 .hero img {
     width: 100%;
     height: auto;
+}
+/* hero text */
+.hero-label {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    color:#000;
+    font-size: 18px;
+    padding: 7px;
+
+    background: radial-gradient(#fff, #81b4ef);
+	border: 1px solid rgba(0,0,0,.75);
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
 }
 
 /* sections */
