@@ -16,6 +16,9 @@ main img {
     height: auto;
 }
 
+main {
+    width: 90%;
+}
 /* header */
 header img {
     width: 100px;
