@@ -18,7 +18,6 @@ const displayWindchill= (infoList) => {
         const temperature = currentDay.temp
         const windspeed = currentDay.windspeed
         const windchill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windspeed, 0.16) + 0.4275 * temperature * Math.pow(windspeed, 0.16)
-        document.getElementById("temperature").innerHTML = `Temperature: ${temperature}°F`
         document.getElementById("windchill").innerHTML = `Windchill: ${windchill.toFixed(2)}°F`
     } else {
         document.getElementById("windchill").innerHTML = "Windchill: N/A"
