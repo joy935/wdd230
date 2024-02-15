@@ -38,10 +38,10 @@
         border: none;
         box-shadow: none;
     }
-    .card-img img {
+    .card-img img, .event-img img {
         max-width: 300px;
     }
-    
+
     /* responsive footer */
     footer {
         display: grid;

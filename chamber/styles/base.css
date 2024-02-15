@@ -11,10 +11,6 @@ body {
     margin: 0 auto;
     font-family: 'Noto Sans', sans-serif;
 }
-main img {
-    width: 180px;
-    height: auto;
-}
 
 /* header */
 header img {
@@ -211,7 +207,7 @@ h3 {
     align-items: center;
     text-align: center;
 }
-#event-img img {
+.event-img img {
     display: block;
     margin: 0 auto; /* center the image horizontally */
 }
