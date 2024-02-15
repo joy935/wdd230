@@ -1,4 +1,3 @@
-
 const windchill = document.getElementById("windchill");
 let infoList = [];
 
