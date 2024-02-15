@@ -16,9 +16,6 @@ main img {
     height: auto;
 }
 
-main {
-    width: 90%;
-}
 /* header */
 header img {
     width: 100px;
@@ -138,7 +135,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* div hero */
+/* responsive hero image */
 #hero {
     display: flex;
     flex-direction: column;
@@ -146,7 +143,7 @@ input:checked + .slider:before {
     align-items: center;
     position: relative;
 }
-.hero-img {
+.hero-img img {
     width: 100%;
     height: auto;
 }
