@@ -198,6 +198,11 @@ h3 {
 .weather-card {
     grid-column: 3 / 4;
 }
+.card-img img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
 
 .events-box {
     display: grid;
@@ -206,7 +211,7 @@ h3 {
     align-items: center;
     text-align: center;
 }
-#event-img {
+#event-img img {
     display: block;
     margin: 0 auto; /* center the image horizontally */
 }

@@ -38,12 +38,10 @@
         border: none;
         box-shadow: none;
     }
-    /* imgages */
-    main img {
-        width: 300px;
-        height: auto;
+    .card-img img {
+        max-width: 300px;
     }
-
+    
     /* responsive footer */
     footer {
         display: grid;

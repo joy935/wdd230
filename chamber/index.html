@@ -52,8 +52,8 @@
                 <source media="(max-width: 600px)" srcset="images/brugg-aarebrucke-small.webp">
                 <source media="(max-width: 800px)" srcset="images/brugg-medium.webp">
                 <img src="images/brugg-large.webp" alt="Aerial View of Brugg">
-            </picture> -->
-            <picture>
+            </picture> --> <!-- original hero image -->
+            <picture> <!-- temporary hero image -->
                 <source srcset="images/temporary-hero-img-small.webp" media="(max-width: 600px)">
                 <source srcset="images/temporary-hero-img-medium.webp" media="(max-width: 800px)">
                 <img src="images/temporary-hero-img-large.webp" alt="Office colaboration">
@@ -65,37 +65,44 @@
     </div>
     <main class="home-grid">
         <div class="discover-box">
-            <section class="about-card"> 
-                <img srcset="images/brugg-building_300.webp 2x"
-                    src="images/brugg-building_180.webp" 
-                    alt="focus building" 
-                    width="300" height="300">       
+            <section class="about-card">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/brugg-building_180.webp" media="(max-width: 200px)">
+                        <img src="images/brugg-building_300.webp" alt="focus building" width="300" height="300">
+                    </picture>
+                </div>
                 <h3>About Brugg</h3>
                 <p>Located in the heart of Aargau, Brugg is a charming city. With a rich history dating back to Roman times, Brugg knows how to blend the medieval charm with the modern world. Close to major cities such Zurich and Basel, the city is a perfect place to visit, live, and for business looking to thrive.</p>
             </section>
             <section class="news-card">
-                <img srcset="images/carnival_300.webp 2x" 
-                    src="images/carnival_180.webp" 
-                    alt="carnival celebration" 
-                    width="300" height="300">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/carnival_180.webp" media="(max-width: 200px)">
+                        <img src="images/carnival_300.webp" alt="carnival celebration" width="300" height="300">
+                    </picture>
+                </div>
                 <h3>News in Brugg</h3>
                 <p>With the festive season of Carnival approaching, Brugg is full with excitement and anticipation. This year, the Brugg Chamber of Commerce is planning diverse initiatives to ensure that businesses flourish and expand during this vibrant time of celebration.</p>
             </section>
             <section class="weather-card">
-                <img srcset="images/weather_300.webp 2x"
-                    src="images/weather_180.webp" 
-                    alt="weather illustration" 
-                    width="300" height="300">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/weather_180.webp" media="(max-width: 200px)">
+                        <img src="images/weather_300.webp" alt="weather illustration" width="300" height="300">
+                    </picture>
+                </div>
                 <h3>Weather</h3>
                 <p>This section will give the actual weather in the city.</p>
             </section>
         </div>
         <div class="events-box"> 
-        <img id="event-img" 
-            srcset="images/b-nextmeet_300.webp 2x"
-            src="images/b-nextmeet_180.webp" 
-            alt="meeting" 
-            width="300" height="300">
+        <div class="event-img">
+            <picture>
+                <source srcset="images/b-nextmeet_300.webp" media="(max-width: 200px)">
+                <img src="images/b-nextmeet_180.webp" alt="meeting" width="300" height="300">
+            </picture>
+        </div>
             <section class="event-card">
                 <h3>Upcoming Event: Business Networking Mixer</h3>
                 <p>Join us for an evening of connection and collaboration at our next event organized by the Chamber. Our Business Networking Mixer will bring together entrepreneurs, business owners, and professionals from across the region for an opportunity to expand your network and create valuable partnerships.</p>
@@ -104,10 +111,12 @@
         </div>
         <div class="plein-feux">
             <section class="spotlight-1-card">
-                <img srcset="images/b-mela_300.webp 2x"
-                    src="images/b-mela_180.webp" 
-                    alt="mela busisness" 
-                    width="300" height="300">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/b-mela_300.webp" media="(max-width: 200px)">
+                        <img src="images/b-mela_180.webp" alt="mela busisness" width="300" height="300">
+                    </picture>
+                </div>
                 <h3>Mela Unikat: Where Creativity Blooms</h3>
                 <p>Discover the art of handlettering at Mela Unikat. The cosy store offers workshops for crafting cards, printing tote bags, and more. Come and see how it is the place for artisans of all levels. Browse a curated selection of writing supplies and stationery essentials.</p>
                 <p class="contact">contact@mela-unikat.com</p>
@@ -115,10 +124,12 @@
                 <p class="contact">Website</p>
             </section>
             <section class="spotlight-2-card">
-                <img srcset="images/b-tooltec_300.webp 2x"
-                    src="images/b-tooltec_180.webp" 
-                    alt="tooltec business" 
-                    width="300" height="300">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/b-tooltec_300.webp" media="(max-width: 200px)">
+                        <img src="images/b-tooltec_180.webp" alt="tooltec business" width="300" height="300">
+                    </picture>
+                </div>
                 <h3>Tooltec: Your Go-To Tool Repair Destination</h3>
                 <p>Experience top-notch tool repair services at Tooltec. Specialized in fixing a wide range of equipment, from power tools to garden machinery, Tooltec ensures your tools are back in action promptly and effectively. With its technicians and a commitment to quality, you can trust Tooltec.
                 </p>
@@ -127,10 +138,12 @@
                 <p class="contact">Website</p>
             </section>
             <section class="spotlight-3-card">
-                <img srcset="images/b-isil_300.webp 2x"
-                    src="images/b-isil_180.webp" 
-                    alt="isil business" 
-                    width="300" height="300">
+                <div class="card-img">
+                    <picture>
+                        <source srcset="images/b-isil_300.webp" media="(max-width: 200px)">
+                        <img src="images/b-isil_180.webp" alt="isil business" width="300" height="300">
+                    </picture>
+                </div>
                 <h3>Isil Schneiderei: Tailoring Excellence</h3>
                 <p>From alterations to custom creations, skilled tailors at Isil Scheiderei will bring your fashion desires to life with precision and care. Whether it's a tailored suit, a stunning gown, or simple alterations, trust Isil Schneiderei for impeccable results.
                 </p>
