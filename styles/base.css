@@ -23,7 +23,7 @@ main{
     gap: 20px;
 }
 
-main h2{
+main h3{
     padding-top: 25px;
     padding-bottom: 1px;
     padding-left: 20px; 
@@ -107,7 +107,7 @@ nav a {
 }
 
 /* sections */
-.card-act h3, .card-info h3 {
+.card-act h4, .card-info h4 {
     background-color: #843524;
     padding: 15px;
     font-size: 25px;
