@@ -9,25 +9,10 @@ button.addEventListener('click', () => {
     // check if the input value is not empty
     if (input.value != '') {
 
-        // create a new list item and a delete button
-        const li = document.createElement('li');
-        const deleteButton = document.createElement('button');
-        
-        // add the input value to the list item and the delete 
-        // button to the list item
-        li.textContent = input.value;
-        deleteButton.textContent = '❌';        
-        li.appendChild(deleteButton);
-        list.appendChild(li);
-        input.value = ''; // clear the input value (for convenience)
-
-        // add an event listener for the delete button
-        deleteButton.addEventListener('click', () => {
-            list.removeChild(li);
-            input.focus();
-            input.value = '';
-        });
-
+        displayList(input.value);
+        chaptersArray.push(input.value);
+        setChapterList();
+        input.value = '';
         input.focus();
     }
     });
@@ -39,3 +24,52 @@ input.addEventListener('keyup', (e) => {
         button.click();
     }
 });
+
+// create an array of list items or an empty array
+const chaptersArray = getChapterList() || [];
+
+// populate the list with the array of list items
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
+});
+
+// function to display the list
+function displayList(chapter) {
+    // create a new list item and a delete button
+    const li = document.createElement('li');
+    const deleteButton = document.createElement('button');
+    
+    // add the input value to the list item and the delete 
+    // button to the list item
+    li.textContent = input.value;
+    deleteButton.textContent = '❌';        
+    li.appendChild(deleteButton);
+    list.appendChild(li);
+    input.value = ''; // clear the input value (for convenience)
+
+    // add an event listener for the delete button
+    deleteButton.addEventListener('click', () => {
+        list.removeChild(li);
+        deleteChapter(li.textContent);
+        input.focus();
+        input.value = '';
+    });
+    input.focus();
+};
+
+// function to save the list to local storage
+function setChapterList() {
+    localStorage.setItem('chapters', JSON.stringify(chaptersArray));
+};
+
+// function to retrieve the list from local storage
+function getChapterList() {
+    return JSON.parse(localStorage.getItem('chapters'));
+};
+
+// function to delete a list item from the array
+function deleteChapter(chapter) {
+    chapter = chapter.slice(0, chapter.length - 1); // this slices off the last character which is the X button
+    chaptersArray = chaptersArray.filter((item) => item !== chapter); // return everyhting expect the chapter to be deleted
+    setChapterList();
+};
