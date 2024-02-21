@@ -33,6 +33,23 @@ chaptersArray.forEach(chapter => {
     displayList(chapter);
 });
 
+// function to save the list to local storage
+function setChapterList() {
+    localStorage.setItem('chapters', JSON.stringify(chaptersArray));
+};
+
+// function to retrieve the list from local storage
+function getChapterList() {
+    return JSON.parse(localStorage.getItem('chapters'));
+};
+
+// function to delete a list item from the array
+function deleteChapter(chapter) {
+    chapter = chapter.slice(0, chapter.length - 1); // this slices off the last character which is the X button
+    chaptersArray = chaptersArray.filter((item) => item !== chapter); // return everyhting expect the chapter to be deleted
+    setChapterList();
+};
+
 // function to display the list
 function displayList(chapter) {
     // create a new list item and a delete button
@@ -56,21 +73,4 @@ function displayList(chapter) {
         // input.value = '';
     });
     input.focus();
-};
-
-// function to save the list to local storage
-function setChapterList() {
-    localStorage.setItem('chapters', JSON.stringify(chaptersArray));
-};
-
-// function to retrieve the list from local storage
-function getChapterList() {
-    return JSON.parse(localStorage.getItem('chapters'));
-};
-
-// function to delete a list item from the array
-function deleteChapter(chapter) {
-    chapter = chapter.slice(0, chapter.length - 1); // this slices off the last character which is the X button
-    chaptersArray = chaptersArray.filter((item) => item !== chapter); // return everyhting expect the chapter to be deleted
-    setChapterList();
 };
