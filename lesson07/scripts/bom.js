@@ -26,7 +26,7 @@ input.addEventListener('keyup', (e) => {
 });
 
 // create an array of list items or an empty array
-const chaptersArray = getChapterList() || [];
+let chaptersArray = getChapterList() || [];
 
 // populate the list with the array of list items
 chaptersArray.forEach(chapter => {
