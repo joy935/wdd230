@@ -60,7 +60,7 @@ function displayList(chapter) {
     // button to the list item
     li.textContent = chapter;
     deleteButton.textContent = '❌';
-    deletebutton.classList.add('delete');        
+    deleteButton.classList.add('delete');        
     li.append(deleteButton);
     list.append(li);
     // input.value = ''; // clear the input value (for convenience)
