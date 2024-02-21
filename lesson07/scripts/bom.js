@@ -36,23 +36,24 @@ chaptersArray.forEach(chapter => {
 // function to display the list
 function displayList(chapter) {
     // create a new list item and a delete button
-    const li = document.createElement('li');
-    const deleteButton = document.createElement('button');
+    let li = document.createElement('li');
+    let deleteButton = document.createElement('button');
     
     // add the input value to the list item and the delete 
     // button to the list item
-    li.textContent = input.value;
-    deleteButton.textContent = '❌';        
-    li.appendChild(deleteButton);
-    list.appendChild(li);
-    input.value = ''; // clear the input value (for convenience)
+    li.textContent = chapter;
+    deleteButton.textContent = '❌';
+    deletebutton.classList.add('delete');        
+    li.append(deleteButton);
+    list.append(li);
+    // input.value = ''; // clear the input value (for convenience)
 
     // add an event listener for the delete button
     deleteButton.addEventListener('click', () => {
         list.removeChild(li);
         deleteChapter(li.textContent);
         input.focus();
-        input.value = '';
+        // input.value = '';
     });
     input.focus();
 };
