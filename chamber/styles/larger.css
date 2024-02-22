@@ -63,10 +63,7 @@
     /* DISCOVER PAGE */
     #sidebar {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .discover-img img {
-        justify-content: center;
-        text-align: center;
+        grid-template-columns: 400px 400px;
+        /* text-align: center; */
     }
 }
