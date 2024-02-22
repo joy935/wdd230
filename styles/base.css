@@ -132,7 +132,9 @@ section p{
     padding: 5px;
     margin-bottom: 5px;
 }
-
+iframe {
+    border: 0;
+}
 /* footer */
 footer{
     background-color: #843524;
