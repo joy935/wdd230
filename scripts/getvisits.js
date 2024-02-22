@@ -6,7 +6,7 @@ let numVisits = Number(localStorage.getItem('numVisits-list')) || 0;
 
 // Display the number of visits if there are any, otherwise display a welcome message
 if (numVisits != 0) {
-    visitDisplay.innerHTML = `Number of Visits: ${numVisits}`;
+    visitDisplay.innerHTML = `Page Visits: ${numVisits}`;
 } else {
     visitDisplay.innerHTML = `This is your first visit, welcome!`;
 }
