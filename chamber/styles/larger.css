@@ -59,4 +59,14 @@
     hr {
         display: none;
     }
+
+    /* DISCOVER PAGE */
+    #sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .discover-img img {
+        justify-content: center;
+        text-align: center;
+    }
 }

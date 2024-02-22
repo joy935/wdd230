@@ -279,7 +279,18 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     padding: 20px;
     gap: 10px;
+}
+
+.page-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.side-info {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
