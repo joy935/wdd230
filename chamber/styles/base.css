@@ -296,6 +296,14 @@ hr {
     border: 1px solid #274F32;
 }
 
+.sidebar-left {
+    padding: 20px;
+}
+
+.sidebar-right {
+    text-align: center;
+}
+
 .side-info h3 {
     text-align: center;
 }

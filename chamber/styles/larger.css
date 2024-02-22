@@ -69,6 +69,7 @@
     .sidebar-left {
         grid-column: 1 / 2;
     }
+
     .sidebar-right {
         grid-column: 2 / 3;
     }
