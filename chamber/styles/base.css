@@ -278,6 +278,7 @@ hr {
 #sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 20px;
     gap: 10px;
 }
@@ -285,6 +286,14 @@ hr {
 .page-title {
     text-align: center;
     padding: 20px;
+}
+
+#visits {
+    background-color: #A69B83;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 1rem;
 }
 
 .side-info {
