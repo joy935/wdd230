@@ -11,7 +11,7 @@ let daysSinceLastVisit = Math.floor((currentTime - lastVisit) / oneDayInMs);
 
 const minsSinceLastVisit = Math.ceil((currentTime - lastVisit) / (1000 * 60));
 
-if (daysSinceLastVisit == 0 && minsSinceLastVisit == 0) {
+if (lastVisit == 0) {
     visitDisplay.innerHTML = `Welcome! Let us know if you have any questions.`;
 } else if (daysSinceLastVisit == 0 && minsSinceLastVisit > 0) {
     visitDisplay.innerHTML = `Back so soon! Awesome!`;
