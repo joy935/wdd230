@@ -278,8 +278,6 @@ hr {
 #sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
     padding: 20px;
     gap: 10px;
 }
@@ -297,8 +295,7 @@ hr {
 }
 
 .sidebar-left {
-    padding: 20px;
-}
+    padding: 20px;}
 
 .sidebar-right {
     text-align: center;
