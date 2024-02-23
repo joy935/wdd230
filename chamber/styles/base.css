@@ -292,10 +292,12 @@ hr {
     align-items: center;
     padding: 20px;
     border: 1px solid #274F32;
+    margin-bottom: 1rem;
 }
 
 .sidebar-left {
-    padding: 20px;}
+    padding: 20px;
+}
 
 .sidebar-right {
     text-align: center;
