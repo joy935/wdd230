@@ -13,7 +13,7 @@ const minsSinceLastVisit = Math.ceil((currentTime - lastVisit) / (1000 * 60));
 
 if (daysSinceLastVisit == 0 && minsSinceLastVisit == 0) {
     visitDisplay.innerHTML = `Welcome! Let us know if you have any questions.`;
-} else if (daysSinceLastVisit == 0 && minsSinceLastVisit != 0) {
+} else if (daysSinceLastVisit == 0 && minsSinceLastVisit > 0) {
     visitDisplay.innerHTML = `Back so soon! Awesome!`;
 } else if (daysSinceLastVisit == 1){ 
         visitDisplay.innerHTML = `You last visited 1 day ago!`;
