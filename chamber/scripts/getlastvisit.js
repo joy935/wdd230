@@ -9,11 +9,13 @@ let lastVisit = Number(localStorage.getItem('lastVisitTime')) || 0;
 const oneDayInMs = 1000 * 60 * 60 * 24;
 let daysSinceLastVisit = Math.floor((currentTime - lastVisit) / oneDayInMs);
 
+console.log(daysSinceLastVisit);
+
 if (daysSinceLastVisit == 0) {
     visitDisplay.innerHTML = `Welcome! Let us know if you have any questions.`;
 } else if (daysSinceLastVisit < 1) {
     visitDisplay.innerHTML = `Back so soon! Awesome!`;
-} else if (daysSinceLastVisit == 1 && daysSinceLastVisit > 0){ 
+} else if (daysSinceLastVisit == 1){ 
     visitDisplay.innerHTML = `You last visited 1 day ago!`;
 } else {
     visitDisplay.innerHTML = `You last visited ${daysSinceLastVisit} days ago!`;
