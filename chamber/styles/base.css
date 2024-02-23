@@ -263,6 +263,10 @@ footer img {
     border-radius: 10px;
     text-align: center;
 }
+.logo-footer {
+    margin: 0 auto;
+}
+
 .info-footer, .contact-footer, .info-author {
     padding: 10px;
 }
