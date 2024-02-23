@@ -74,4 +74,9 @@
     .sidebar-right {
         grid-column: 2 / 3;
     }
+
+    /* hover effect on images */
+    .discover-img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
