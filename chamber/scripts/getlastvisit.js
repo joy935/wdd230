@@ -11,11 +11,6 @@ let daysSinceLastVisit = Math.floor((currentTime - lastVisit) / oneDayInMs);
 
 const minsSinceLastVisit = ((currentTime - lastVisit) / (1000 * 60));
 
-console.log(`Days: ${daysSinceLastVisit}`);
-console.log(`Mins: ${minsSinceLastVisit}`);
-console.log(`Last Visit: ${lastVisit}`);    
-console.log(`Current Time: ${currentTime}`);
-
 if (daysSinceLastVisit < 1 && minsSinceLastVisit > 0) {
     visitDisplay.innerHTML = `Back so soon! Awesome!`;
 } else if (daysSinceLastVisit == 0) {
