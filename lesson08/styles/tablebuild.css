@@ -4,7 +4,7 @@ body {
 
 table {
     margin: 10px auto;
-    border: 1px solid #000;
+    border: 1px solid #364542;
     box-shadow: 0 0 10px #000;
     border-collapse: collapse;
 }
@@ -18,25 +18,26 @@ caption {
 
 th, td {
     padding: 7px 15px;
-    border: 1px solid #364542;
+    border: 1px solid #364542; /* cell color */
 }
 
 th {
-    background-color: #364542;
+    background-color: #364542; /* header color */
     color: #fff;
     font-size: larger;
 }
 
 td {
     text-align: center;
+    border: 1px solid #f0f0f0; /* cell color */
 }
 
 tbody tr:nth-child(even) {
-    background-color: #DDE4E2;
+    background-color: #DDE4E2; /* even row color */
 }
 
 .special-header {
-    background-color: #516762;
+    background-color: #516762; /* special header color */
 }
 
 .special-row {
