@@ -25,6 +25,7 @@ th {
     color: #fff;
     font-size: larger;
     border: 1px solid #364542; /* cell color */
+    padding: 7px 15px;
 }
 
 td {
