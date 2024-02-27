@@ -18,13 +18,13 @@ caption {
 
 th, td {
     padding: 7px 15px;
-    border: 1px solid #364542; /* cell color */
 }
 
 th {
     background-color: #364542; /* header color */
     color: #fff;
     font-size: larger;
+    border: 1px solid #364542; /* cell color */
 }
 
 td {
