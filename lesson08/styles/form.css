@@ -206,3 +206,12 @@ form label.special input {
 #rangevalues option {
 	flex: 1 1 auto;
 }
+
+/* record page */
+.record {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
