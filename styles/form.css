@@ -184,15 +184,11 @@ form label.top input:required:valid {
 
 /* rating */
 
-form label.special {
+form label.special, form label.special input {
     display: block;
     font-size: 1rem;
 }
 
-form label.special input {
-    display: block;
-    font-size: 1rem;
-}
 #rating {
 	width: 180px;
 	margin-bottom: 0;
