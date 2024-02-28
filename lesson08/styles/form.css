@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+:root {
+    --main-color: #522E26;
+    --red-color: #843524;
+    --green-color: #248562;
+    --back: #E8E8E8;
+    --back2: #CFC0BD;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +33,7 @@ main{
 
 /* header */
 header{
-    background-color: #843524;
+    background-color: var(--red-color);
     width: 100%;
     display: flex;
     padding: 20px;
@@ -59,7 +67,7 @@ nav a {
 
 /* footer */
 footer{
-    background-color: #843524;
+    background-color: var(--red-color);
     width: 100%;
     text-align: center;
     font-size: 17px;
@@ -94,7 +102,7 @@ nav {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #EBECEB;
+    background-color: var(--back);
 }
 /* hide navigation menu */
 nav a {
@@ -124,10 +132,51 @@ nav a:hover {
     /* padding-left: 1rem; */
 }
 
-/* form */
+/*---------- form ----------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--main-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    margin: 1rem 0;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 25rem;
+    background-color: var(--back);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 90%;
+    max-width: 25rem;
+}
+
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: var(--red-color) solid 6px;
 }
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border-left: var(--green-color) solid 6px;
 }
