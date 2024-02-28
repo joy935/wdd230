@@ -150,12 +150,12 @@ form legend {
 form label.top {
     display: block;
     margin: 1rem 0;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 form label.top input {
     display: block;
-    font-size: 1rem;
+    font-size: 0.7rem;
     border: 1px solid var(--main-color);
     border-radius: 4px;
     padding: .75rem;
@@ -181,12 +181,11 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: var(--green-color) solid 6px;
 }
-
 /* rating */
 
 form label.special {
     display: block;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 form label.special input {
