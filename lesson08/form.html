@@ -38,7 +38,19 @@
             <label class="top">Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9].{8,}" placeholder="At least 8 alpha-numeric characters long." required></input></label>
             <label class="top">Re-enter Password* <input type="password" id="password2" name="password2" required></label>
             <label class="top">Email* <input type="email" id="email" name="email" pattern="[^@\s]+@byui\.edu" title="Please enter your buyi email address" required></label>
-            <label class="top">Page Rating (1-10)<input type="range" id="rating" name="rating" min="0" max="10" step="1"></label>
+            <label class="top">Page Rating (1-10)<input type="range" id="rating" name="rating" min="0" max="10" step="1" value="0"></label>
+            <datalist id="ratingList">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
         </fieldset>
         <input type="submit" value="Register Myself" class="submitBtn">
         </form>
@@ -52,5 +64,6 @@
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/checkpassword.js" type="module" ></script>
     <script src="scripts/checkemail.js" type="module" ></script>
+    <script src="scripts/getrating.js" type="module" ></script>
 </body>
 </html>
