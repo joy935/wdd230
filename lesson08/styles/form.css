@@ -181,3 +181,28 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: var(--green-color) solid 6px;
 }
+
+/* rating */
+
+form label.special {
+    display: block;
+    font-size: .8rem;
+}
+
+form label.special input {
+    display: block;
+    font-size: 1rem;
+}
+#rating {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 23px;
+	width: 160px;
+}
+#rangevalues option {
+	flex: 1 1 auto;
+}
