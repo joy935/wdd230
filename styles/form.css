@@ -181,6 +181,7 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: var(--green-color) solid 6px;
 }
+
 /* rating */
 
 form label.special {
