@@ -1,8 +1,8 @@
 const email = document.querySelector('#email');
 
-console.log(email);
 email.addEventListener('blur', checkEmail);
 
+/* check if the email is valid */
 function checkEmail() {
     let emailValue = email.value;
     let emailPattern = /^[^@\s]+@byui\.edu$/;
