@@ -1,10 +1,11 @@
 const email = document.querySelector('#email');
 
+console.log(email);
 email.addEventListener('blur', checkEmail);
 
 function checkEmail() {
     let emailValue = email.value;
-    let emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+    let emailPattern = /^[^@\s]+@byui\.edu$/;
     
     if (!emailPattern.test(emailValue)) {
         email.setCustomValidity('Invalid email address');
