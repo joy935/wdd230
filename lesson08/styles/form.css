@@ -25,9 +25,6 @@ body {
 main{
     width: 90%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
     gap: 20px;
 }
 
@@ -41,17 +38,21 @@ header{
     align-items: center; /*center-align vertically*/
 }
 
+header h1{
+    color: white;
+    padding: 15px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
 .photovei{
     max-width: 10%;
     height: auto;
     border-radius: 5%; /* corner radius */
 }
 
-header h1{
-    color: white;
-    padding: 15px;
-    margin-left: 20px;
-    font-size: 30px;
+h2 {
+    padding-top: 2rem;
 }
 
 /* navigation bar */
