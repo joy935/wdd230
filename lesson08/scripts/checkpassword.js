@@ -17,8 +17,9 @@ function checkPassword() {
         /* add error message */
         errorMessage.style.display = 'block';
         password2.style.backgroundColor = '#fff0f3';
+        password1.value = '';
         password2.value = '';
-        password2.focus();
+        password1.focus();
     } else {
         message.style.display = 'none';
         password2.style.backgroundColor = '#fff';
