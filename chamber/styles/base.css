@@ -340,7 +340,7 @@ hr {
 
 /*---------- JOIN PAGE ----------*/
 
-main.join-us {
+main.join-grid {
     padding: 1rem;
 }
 
@@ -352,7 +352,6 @@ form fieldset {
 }
 
 form legend {
-    color: var(--secondary-color);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -365,7 +364,7 @@ form label.top {
 
 form label.top input {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     padding: .75rem;
@@ -382,7 +381,7 @@ form label.sbs {
 
 textarea {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     padding: .75rem;
@@ -395,9 +394,8 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border-left: 6px solid var(--green-color);
-    background-color: var(--back);
+    background-color: var(--accent1-color);
 }
-
 form input.submitBtn {
     border: none;
     border-radius: 4px;
@@ -408,4 +406,11 @@ form input.submitBtn {
     width: 90%;
     max-width: 25rem;
     font-size: 1rem;
+}
+.memberships {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background-color: var(--accent1-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
 }

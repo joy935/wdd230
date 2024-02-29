@@ -48,47 +48,58 @@
         <a href="join.html">Join</a>
     </nav>
 
-    <main class="join-us">
-        <h2>Join Us</h2>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
-                <label class="top">Title or Position* <input type="text" id="title" name="title" pattern="[a-zA-Z]{7,}" required></label>
-                <label class="top">Email* <input type="email" id="email" name="email" placeholder="name@mail.com" title="Please enter your email address" required></label>
-                <label class="top">Mobile Phone* <input type="tel" id="phone" name="phone" placeholder="1234445678" title="Please enter your phone number" required></label>
-                <label class="top">Business or Organization's Name* <input type="text" id="company" name="company" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="sbs"><input type="radio" name="membership" value="np" required> Non-Profit Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-            </fieldset>
-            <fieldset>
-                <legend>Business or Organization's Details</legend>
-                <label class="top">Description <textarea id="details" name="details"></textarea></label>
-            </fieldset>
-            <input type="hidden" name="date" id="date">
-            <input type="submit" value="Join The Chamber" class="submitBtn">
-        </form>
+    <main class="join-grid">
+        <div class="join-form">
+            <h2 class="page-title">Join Us</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Title or Position* <input type="text" id="title" name="title" pattern="[a-zA-Z]{7,}" required></label>
+                    <label class="top">Email* <input type="email" id="email" name="email" placeholder="name@mail.com" title="Please enter your email address" required></label>
+                    <label class="top">Mobile Phone* <input type="tel" id="phone" name="phone" placeholder="1234445678" title="Please enter your phone number" required></label>
+                    <label class="top">Business or Organization's Name* <input type="text" id="company" name="company" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="sbs"><input type="radio" name="membership" value="np" required> Non-Profit Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business or Organization's Details</legend>
+                    <label class="top">Description <textarea id="details" name="details"></textarea></label>
+                </fieldset>
+                <input type="hidden" name="date" id="date">
+                <input type="submit" value="Join The Chamber" class="submitBtn">
+            </form>
+        </div>
 
         <div class="benefits">
-           <h2>Membership</h2> 
-           <h3>Non-Profit Membership</h3>
-           <p>Ideal for charitable organizations, the Non-Profit Membership offers essential benefits like member resources and networking opportunities at a budget-friendly price. Members gain visibility through website listings and enjoy discounted event participation and advertising options.</p>
-           <p>Free of Charge</p>
-           <h3>Bronze Membership</h3>
-           <p>Tailored for small businesses, the Bronze Membership provides enhanced visibility on the organization's website and substantial discounts on workshops and events. Members receive occasional spotlight features and access to exclusive networking events.</p>
-           <p>Cost: 250CHF/year</p>
-           <h3>Silver Membership</h3>
-           <p>Designed for businesses seeking moderate exposure, the Silver Membership offers prominent website placement, event discounts, and regular spotlight positions. Members also benefit from specialized training sessions tailored to their needs.</p>
-            <p>Cost: 500CHF/year</p>
-           <h3>Gold Membership</h3>
-           <p> The Gold Membership provides maximum exposure and exclusive benefits for businesses. Members enjoy premium website placement, VIP event invitations, advertising dominance, and personalized services like dedicated account management.</p>
-            <p>Cost: 1000CHF/year</p>
+           <h2 class="page-title">Membership</h2> 
+           <div class="memberships">
+                <h3>Non-Profit Membership</h3>
+                <p>Ideal for charitable organizations, the Non-Profit Membership offers essential benefits like member resources and networking opportunities at a budget-friendly price. Members gain visibility through website listings and enjoy discounted event participation and advertising options.</p>
+                <p>Free of Charge</p>
+            </div>
+            <div class="memberships">
+                <h3>Bronze Membership</h3>
+                <p>Tailored for small businesses, the Bronze Membership provides enhanced visibility on the organization's website and substantial discounts on workshops and events. Members receive occasional spotlight features and access to exclusive networking events.</p>
+                <p>Cost: 250CHF/year</p>
+            </div>
+            <div class="memberships">
+                <h3>Silver Membership</h3>
+                <p>Designed for businesses seeking moderate exposure, the Silver Membership offers prominent website placement, event discounts, and regular spotlight positions. Members also benefit from specialized training sessions tailored to their needs.</p>
+                <p>Cost: 500CHF/year</p>
+            </div>
+            <div class="memberships">
+                <h3>Gold Membership</h3>
+                <p> The Gold Membership provides maximum exposure and exclusive benefits for businesses. Members enjoy premium website placement, VIP event invitations, advertising dominance, and personalized services like dedicated account management.</p>
+                <p>Cost: 1000CHF/year</p>
+            </div>
+        </div>
     </main>
 
     <footer>

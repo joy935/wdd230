@@ -60,7 +60,7 @@
         display: none;
     }
 
-    /* DISCOVER PAGE */
+    /*---------- DISCOVER PAGE ----------*/
     #sidebar {
         display: grid;
         grid-template-columns: 400px 400px;
@@ -78,5 +78,19 @@
     /* hover effect on images */
     .discover-img:hover {
         box-shadow: 0 0 50px #333;
+    }
+
+    /*------------ JOIN PAGE ------------*/
+    main.join-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .join-form {
+        grid-column: 1 / 2;
+    }
+    .benefits {
+        grid-column: 2 / 3;
     }
 }
