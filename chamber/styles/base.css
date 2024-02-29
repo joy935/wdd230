@@ -344,6 +344,7 @@ main.join-grid {
     padding: 1rem;
 }
 
+/* form */
 form fieldset {
     margin: 2rem 0;
     border: 1px solid var(--primary-color);
@@ -407,6 +408,16 @@ form input.submitBtn {
     max-width: 25rem;
     font-size: 1rem;
 }
+
+/* memberships */
+table {
+    margin: 10px auto;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px #000;
+    border-collapse: collapse;
+}
+
+
 .memberships {
     margin: 1rem 0;
     padding: 0.8rem;
