@@ -340,9 +340,14 @@ hr {
 
 /*---------- JOIN PAGE ----------*/
 
+main.join-us {
+    padding: 1rem;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid var(--primary-color);
+    border-radius: 4px;
     padding: 1rem 3%;
 }
 
@@ -395,6 +400,7 @@ form label.top input:required:valid {
 
 form input.submitBtn {
     border: none;
+    border-radius: 4px;
     background-color: var(--primary-color);
     color: white;
     padding: .75rem 1.5rem;
