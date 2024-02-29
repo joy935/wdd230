@@ -415,8 +415,34 @@ table {
     border: 1px solid var(--primary-color);
     box-shadow: 0 0 10px #000;
     border-collapse: collapse;
+    font-size: 0.9rem;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
 }
 
+th, td {
+    padding: 5px 13px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: larger;
+    border: 1px solid var(--primary-color);
+    padding: 7px 15px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent1-color);
+}
 
 .memberships {
     margin: 1rem 0;
