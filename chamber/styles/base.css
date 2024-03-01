@@ -452,3 +452,9 @@ tbody tr:nth-child(even) {
     border: 1px solid var(--primary-color);
     border-radius: 4px;
 }
+
+/*---------- thank you page ----------*/
+.thank-you {
+    text-align: center;
+    padding: 1rem;
+}
