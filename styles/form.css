@@ -191,14 +191,17 @@ form label.special, form label.special input {
 }
 
 #rating {
-	width: 180px;
+	width: 220px;
 	margin-bottom: 0;
 }
-
+#rangevalue {
+	font-size: 1.5rem;
+	color: navy;
+}
 #rangevalues {
 	display: flex;
-	margin: 0 0 0 23px;
-	width: 160px;
+	margin: 0 0 0 25px;
+	width: 200px;
 }
 #rangevalues option {
 	flex: 1 1 auto;

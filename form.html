@@ -40,7 +40,8 @@
             <label class="top">Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9].{8,}" placeholder="At least 8 alpha-numeric characters long." required></label>
             <label class="top">Re-enter Password* <input type="password" id="password2" name="password2" required></label>
             <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="Please enter your buyi email address" required></label> <!-- pattern="[^@\s]+@byui\.edu" -->
-            <label class="special">Page Rating <input type="range" id="rating" name="rating" min="0" max="10" step="1" value="0" list="rangevalues"></label>
+
+            <label class="special">Page Rating<div id="rangevalue">0</div><input type="range" id="rating" name="rating" min="0" max="10" step="1" value="0" list="rangevalues"></label>
             <datalist id="rangevalues">
                 <option value="1">1</option>
                 <option value="2">2</option>
