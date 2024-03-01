@@ -449,6 +449,10 @@ tbody tr:nth-child(even) {
     background-color: var(--accent1-color);
 }
 
+.dark-style tbody tr:nth-child(even) {
+    background-color: #333333;
+}
+
 .memberships {
     margin: 1rem 0;
     padding: 0.8rem;
