@@ -409,6 +409,9 @@ form input.submitBtn {
     font-size: 1rem;
 }
 
+.submitBtn:hover {
+    background-color: var(--secondary-color);
+}
 /* memberships */
 table {
     margin: 10px auto;
@@ -417,6 +420,7 @@ table {
     border-collapse: collapse;
     font-size: 0.9rem;
     max-width: 400px;
+    padding: .1rem;
 }
 caption {
     padding: 10px;
