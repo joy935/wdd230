@@ -23,6 +23,9 @@
 	}
 
     /* record page */
+    form label.top input {
+        font-size: 1rem;
+    }
     .record {
         display: flex;
         flex-direction: column;
