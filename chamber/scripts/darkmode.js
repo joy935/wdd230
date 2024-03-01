@@ -4,8 +4,6 @@ const boxevent = document.querySelector('.events-box');
 const contacts = document.querySelectorAll('.contact');
 const memberships = document.querySelectorAll('.memberships');
 
-console.log(memberships)
-
 darkMode.addEventListener('change', () => {
     if (darkMode.checked) {
 		body.classList.add('dark-style');
