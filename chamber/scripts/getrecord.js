@@ -1,3 +1,5 @@
 const currentDate = new Date();
-const currentRecordDate = document.getElementById(date);
-console.log(currentRecordDate);
+const currentTime = currentDate.getTime();
+const currentRecordDate = document.getElementById('date');
+
+currentRecordDate.value = currentTime;
