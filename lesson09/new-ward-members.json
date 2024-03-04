@@ -1,0 +1,20 @@
+{
+    "wardInformation" : {
+        "familyName" : "Ericson",  
+        "moveDate" : "2018-02-01",
+        "numberRecords" : 2,
+        "bishopricVisit" : false,
+        "individuals" : [
+            {
+                "name" : "Evan Ericson",
+                "gender" : "M",
+                "birthDate" : "1994-08-02"
+            },
+            {
+                "name" : "Veihi Ericson",
+                "gender" : "F",
+                "birthDate" : "1992-06-18"
+            }
+        ]
+    }
+}
