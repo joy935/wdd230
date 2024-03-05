@@ -1,5 +1,5 @@
 const baseURL = "https://joy935.github.io/wdd230/";
-const linksURL =  "data/links.json";
+const linksURL =  "https://joy935.github.io/wdd230/data/links.json";
 
 const links = document.querySelector('#links');
 
@@ -24,7 +24,7 @@ const displayLinks = (weeks) => {
         lesson.links.forEach((link, index) => {
             let linkURL = document.createElement('a');
             linkURL.textContent = link.title;
-            linkURL.href = baseURL + link.url;
+            linkURL.href = link.url;
             links.appendChild(linkURL);
             
             // add a separator between links if it's not the last one
