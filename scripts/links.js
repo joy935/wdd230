@@ -14,24 +14,25 @@ const getLinks = async () => {
     }
 };
 
-const displayLinks = (data) => {
-    data.lessons.forEach((lesson) => {
+const displayLinks = (weeks) => {
+    weeks.lessons.forEach((lesson) => {
         let lessonTitle = document.createElement('h4');
         lessonTitle.textContent = `Week ${lesson.lesson}`;
         links.appendChild(lessonTitle);
 
-        lesson.links.forEach((link) => {
-            let linkTitle = document.createElement('a');
-            let linkURL = document.createElement('p');
-
-            linkTitle.textContent = link.title;
-            linkTitle.href = baseURL + link.url;
-            linkTitle.target = "_blank";
-
-            links.appendChild(linkTitle);
+        lesson.links.forEach((link, index) => {
+            let linkURL = document.createElement('a');
+            linkURL.textContent = link.title;
+            linkURL.href = baseURL + link.url;
             links.appendChild(linkURL);
-        });
-    });
+            
+            // add a separator between links if it's not the last one
+            if (index < lesson.links.length - 1) {
+                let separator = document.createTextNode(" | ");
+                links.appendChild(separator);
+            }
+            });
+    })
 };
 
 getLinks();
