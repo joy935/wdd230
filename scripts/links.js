@@ -7,7 +7,6 @@ const getLinks = async () => {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
-        // console.log(data.lessons[0].lesson);
         displayLinks(data);
     } catch (error) {
         console.error("Error fetching data: ", error);
@@ -16,10 +15,12 @@ const getLinks = async () => {
 
 const displayLinks = (weeks) => {
     weeks.lessons.forEach((lesson) => {
-        let lessonTitle = document.createElement('h4');
-        lessonTitle.textContent = `Week ${lesson.lesson}`;
-        links.appendChild(lessonTitle);
+        // create a new div for each week
+        let weekTitle = document.createElement('h4');
+        weekTitle.textContent = `Week ${lesson.lesson}`;
+        links.appendChild(weekTitle);
 
+        // create a new div for each activity
         lesson.links.forEach((link, index) => {
             let linkURL = document.createElement('a');
             linkURL.textContent = link.title;
