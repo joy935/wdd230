@@ -130,10 +130,13 @@ section p{
 }
 #links {
     padding-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
 }
 #links h4 {
     text-decoration: none;
-    padding-top: 10px;
+    padding-top: 20px;
+    color: #843524;
 }
 
 iframe {
