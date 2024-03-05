@@ -136,7 +136,8 @@ section p{
 #links h4 {
     text-decoration: none;
     padding-top: 20px;
-    color: #843524;
+    /* color: #843524; */
+    font-size: 22px;
 }
 
 iframe {
