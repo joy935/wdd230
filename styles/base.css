@@ -123,15 +123,19 @@ nav a {
     border: 1px solid grey;
     border-radius: 5px;
 }
-.card2
-{
-    text-align: left;
-    list-style-type: none;
-}
+
 section p{
     padding: 5px;
     margin-bottom: 5px;
 }
+#links {
+    padding-bottom: 20px;
+}
+#links h4 {
+    text-decoration: none;
+    padding-top: 10px;
+}
+
 iframe {
     border: 0;
 }
