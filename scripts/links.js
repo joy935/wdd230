@@ -1,5 +1,5 @@
 const baseURL = "https://joy935.github.io/wdd230/";
-const linksURL =  "https://joy935.github.io/wdd230/data/links.json";
+const linksURL =  "data/links.json";
 
 const links = document.querySelector('#links');
 
