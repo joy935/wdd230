@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "Mela Unikat",
-            "address": "Musterstrasse 1",
+            "address": "Annerstrasse 1",
             "phone": "+41 11 111 11",
             "website": "www.melaunikat.ch",
             "image": "mela.jpg",
@@ -31,43 +31,44 @@
             "id": 3
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "membership": "",
-            "email": "",
+            "name": "Backerei La Mer",
+            "address": "Hauptstrasse 4",
+            "phone": "+41 44 444 44",
+            "website": "www.lamer.ch",
+            "image": "lamer.jpg",
+            "membership": "silver",
+            "email": "contact@lamer.com",
             "id": 4
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "membership": "",
-            "email": "",
+            "name": "Aar Sports",
+            "address": "Renggerstrasse 5",
+            "phone": "+41 55 555 55",
+            "website": "www.aarsports.ch",
+            "image": "aarsports.jpg",
+            "membership": "silver",
+            "email": "contact@aarsports.com",
             "id": 5
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "membership": "",
-            "email": "",
+            "name": "Finest",
+            "address": "Stapferstrasse 6",
+            "phone": "+41 66 666 66",
+            "website": "www.finest.ch",
+            "image": "finest.jpg",
+            "membership": "bronze",
+            "email": "contact@finest.com",
             "id": 6
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "membership": "",
-            "email": "",
+            "name": "Sabor Cafe & Bar",
+            "address": "Frickstrasse 7",
+            "phone": "+41 77 777 77",
+            "website": "www.sabor.ch",
+            "image": "sabor.jpg",
+            "membership": "bronze",
+            "email": "contact@sabor.com",
             "id": 7
-        },
+        }
+    ]
 } 
