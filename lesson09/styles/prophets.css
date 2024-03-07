@@ -51,7 +51,7 @@ p {
 }
 
 section {
-    width: 340px;
+    width: (100% - 1rem);
     border: 1px solid #000;
     margin: .25rem;
     padding: .35rem;
