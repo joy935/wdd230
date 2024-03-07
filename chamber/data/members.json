@@ -1,0 +1,73 @@
+{
+    "members": [
+        {
+            "name": "Mela Unikat",
+            "address": "Musterstrasse 1",
+            "phone": "+41 11 111 11",
+            "website": "www.melaunikat.ch",
+            "image": "mela.jpg",
+            "membership": "gold",
+            "email": "contact@mela-unikat.com",
+            "id": 1
+        },
+        {
+            "name": "Tooltec",
+            "address": "Hauptstrasse 2",
+            "phone": "+41 22 222 22",
+            "website": "www.tooltec.ch",
+            "image": "tooltec.jpg",
+            "membership": "gold",
+            "email": "contact@tooltec.com",
+            "id": 2
+        },
+        {
+            "name": "Isil Schneiderei",
+            "address": "Bahnstrasse 3",
+            "phone": "+41 33 333 33",
+            "website": "www.isilschneiderei.ch",
+            "image": "isilschneiderei.jpg",
+            "membership": "gold",
+            "email": "contact@isil.com",
+            "id": 3
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "membership": "",
+            "email": "",
+            "id": 4
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "membership": "",
+            "email": "",
+            "id": 5
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "membership": "",
+            "email": "",
+            "id": 6
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "membership": "",
+            "email": "",
+            "id": 7
+        },
+} 
