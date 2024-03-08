@@ -1,6 +1,6 @@
 const gridBtn = document.querySelector('#directory-grid');
 const listBtn = document.querySelector('#directory-list');
-const directory = document.querySelector('#directory');
+const display = document.querySelector('article');
 
 gridBtn.addEventListener('click', () => {
     directory.classList.add('grid');
@@ -10,6 +10,6 @@ gridBtn.addEventListener('click', () => {
 listBtn.addEventListener('click', showList);
 
 function showList() {
-    directory.classList.add('list');
-    directory.classList.remove('grid');
+    display.classList.add('list');
+    display.classList.remove('grid');
 }
