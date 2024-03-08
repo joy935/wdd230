@@ -23,7 +23,7 @@ const displayMembers = (members) => {
         let website = document.createElement('a');
 
         image.setAttribute('src', member.image);
-        image.setAttribute('alt', `Portrait of ${member.name}`);
+        image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '300');
         image.setAttribute('height', '300');
@@ -32,6 +32,7 @@ const displayMembers = (members) => {
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`;
 
+        card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
