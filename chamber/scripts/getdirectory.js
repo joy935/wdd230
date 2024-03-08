@@ -15,7 +15,7 @@ const getMembers = async () => {
 
 const displayMembers = (members) => {
     members.forEach((member) => {
-        let card = document.createElement('div');
+        let card = document.createElement('section');
         let image = document.createElement('img');
         let name = document.createElement('h3');
         let address = document.createElement('p');
