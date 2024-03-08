@@ -492,7 +492,7 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
     padding: 20px;
-    align-items: center;
+    text-align: center;
 }
 
 .d-grid section {
@@ -503,21 +503,7 @@ section {
 	margin: 0.1rem;
 }
 
-.list {
-	display: flex;
-	flex-direction: column;
-}
 
-.list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-}
-
-.list section > * {
-	margin: 0 1rem;
-}
 
 .list section img {
 	display: none;
