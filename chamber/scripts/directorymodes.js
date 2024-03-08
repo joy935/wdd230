@@ -3,8 +3,8 @@ const listBtn = document.querySelector('#directory-list');
 const display = document.querySelector('article');
 
 gridBtn.addEventListener('click', () => {
-    directory.classList.add('grid');
-    directory.classList.remove('list');
+    display.classList.add('grid');
+    display.classList.remove('list');
 });
 
 listBtn.addEventListener('click', showList);

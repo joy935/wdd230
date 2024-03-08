@@ -476,8 +476,7 @@ tbody tr:nth-child(even) {
     text-align: center;
 }
 
-section {
-    /* border: 1px solid var(--primary-color); */
+#directory section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
@@ -496,23 +495,26 @@ section {
     background-color: var(--accent1-color);
 }
 
-.list {
-	display: grid;
+#directory-list {
+	display: flex;
 	flex-direction: column;
-    grid-template-columns: 1fr;
 }
 
-.list section {
-	/* display: grid; */
-	
+#directory-list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
 
-.list section > * {
+#directory-list section > * {
 	margin: 0 1rem;
 }
 
-.list section img {
+#directory-list section img {
 	display: none;
+}
+
+#directory-list section:nth-child(even) {
+	background-color: var(--accent1-color);
 }
