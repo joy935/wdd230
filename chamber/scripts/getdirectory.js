@@ -16,11 +16,18 @@ const getMembers = async () => {
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('div');
+        let image = document.createElement('img');
         let name = document.createElement('h3');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
 
+        card.setAttribute('class', 'card');
+        image.setAttribute('src', member.imageurl);
+        image.setAttribute('alt', `Portrait of ${member.name}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '300');
+        image.setAttribute('height', '300');
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
