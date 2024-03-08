@@ -466,3 +466,19 @@ tbody tr:nth-child(even) {
     text-align: center;
     padding: 1rem;
 }
+
+/*---------- DIRECTORY PAGE ----------*/
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#directory section {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    background-color: var(--accent1-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
