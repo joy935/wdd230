@@ -468,19 +468,6 @@ tbody tr:nth-child(even) {
 }
 
 /*---------- DIRECTORY PAGE ----------*/
-#directory {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-#directory section {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 20px;
-}
-
 .directory-menu {
     margin: 1rem auto;
 	border: 1px solid var(--primary-color);
@@ -495,26 +482,47 @@ tbody tr:nth-child(even) {
     background-color: var(--accent1-color);
 }
 
-#directory-list {
+section {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.d-grid section {
+    text-align: center;
+}
+
+.d-grid section > * {
+	margin: 0.1rem;
+}
+
+.list {
 	display: flex;
 	flex-direction: column;
 }
 
-#directory-list section {
+.list section {
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
 
-#directory-list section > * {
+.list section > * {
 	margin: 0 1rem;
 }
 
-#directory-list section img {
+.list section img {
 	display: none;
 }
 
-#directory-list section:nth-child(even) {
+.list section:nth-child(even) {
 	background-color: var(--accent1-color);
 }
