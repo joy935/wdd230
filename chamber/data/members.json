@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "Mela Unikat",
-            "address": "Annerstrasse 1",
+            "address": "Annerstrasse 1 Brugg 5200",
             "phone": "+41 11 111 11",
             "website": "www.melaunikat.ch",
             "image": "mela.jpg",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Tooltec",
-            "address": "Hauptstrasse 2",
+            "address": "Hauptstrasse 2 Brugg 5200",
             "phone": "+41 22 222 22",
             "website": "www.tooltec.ch",
             "image": "tooltec.jpg",
@@ -38,7 +38,7 @@
         },
         {
             "name": "Isil Schneiderei",
-            "address": "Bahnstrasse 3",
+            "address": "Bahnstrasse 3 Brugg 5200",
             "phone": "+41 33 333 33",
             "website": "www.isilschneiderei.ch",
             "image": "isilschneiderei.jpg",
@@ -56,7 +56,7 @@
         },
         {
             "name": "Backerei La Mer",
-            "address": "Hauptstrasse 4",
+            "address": "Hauptstrasse 4 Brugg 5200",
             "phone": "+41 44 444 44",
             "website": "www.lamer.ch",
             "image": "lamer.jpg",
@@ -74,7 +74,7 @@
         },
         {
             "name": "Aar Sports",
-            "address": "Renggerstrasse 5",
+            "address": "Renggerstrasse 5 Brugg 5200",
             "phone": "+41 55 555 55",
             "website": "www.aarsports.ch",
             "image": "aarsports.jpg",
@@ -92,7 +92,7 @@
         },
         {
             "name": "Finest",
-            "address": "Stapferstrasse 6",
+            "address": "Stapferstrasse 6 Brugg 5200",
             "phone": "+41 66 666 66",
             "website": "www.finest.ch",
             "image": "finest.jpg",
@@ -110,7 +110,7 @@
         },
         {
             "name": "Sabor Cafe & Bar",
-            "address": "Frickstrasse 7",
+            "address": "Frickstrasse 7 Brugg 5200",
             "phone": "+41 77 777 77",
             "website": "www.sabor.ch",
             "image": "sabor.jpg",
