@@ -477,7 +477,7 @@ tbody tr:nth-child(even) {
 }
 
 section {
-    border: 1px solid var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
@@ -497,13 +497,14 @@ section {
 }
 
 .list {
-	display: flex;
+	display: grid;
 	flex-direction: column;
+    grid-template-columns: 1fr;
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	/* display: grid; */
+	
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -513,5 +514,5 @@ section {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none;
 }
