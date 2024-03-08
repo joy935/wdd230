@@ -22,8 +22,7 @@ const displayMembers = (members) => {
         let phone = document.createElement('p');
         let website = document.createElement('a');
 
-        card.setAttribute('class', 'card');
-        image.setAttribute('src', member.imageurl);
+        image.setAttribute('src', member.image);
         image.setAttribute('alt', `Portrait of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '300');
