@@ -476,9 +476,7 @@ tbody tr:nth-child(even) {
     text-align: center;
 }
 
-#directory section {
+section {
     border: 1px solid var(--primary-color);
-    padding: 20px;
-    background-color: var(--accent1-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
