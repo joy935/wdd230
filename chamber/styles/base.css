@@ -481,3 +481,17 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
+
+.directory-menu {
+    margin: 1rem auto;
+	border: 1px solid var(--primary-color);
+	padding: 0.5rem;
+	background-color: var(--primary-color);
+	text-align: center;
+}
+
+.directory-menu button {
+    padding: 1rem;
+	font-weight: 700;
+    background-color: var(--accent1-color);
+}
