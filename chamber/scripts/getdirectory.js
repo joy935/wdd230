@@ -30,8 +30,8 @@ const displayMembers = (members) => {
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
-        console.log(member.website);
         website.href = `${member.website}`;
+        website.textContent = `${member.website}`;
 
         card.appendChild(image);
         card.appendChild(name);
