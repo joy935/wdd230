@@ -19,10 +19,10 @@
             }
         },
         {
-            "name": "Tooltec",
+            "name": "NSW Niederberger",
             "address": "Hauptstrasse 2 Brugg 5200",
             "phone": "+41 22 222 22",
-            "website": "https://www.tooltec.ch",
+            "website": "http://www.nwsniederberger.ch/",
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/placeh.webp",
             "membership": "gold",
             "email": "contact@tooltec.com",
