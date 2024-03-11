@@ -10,7 +10,7 @@ const apiFetch = async () => {
 
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            // console.log(data); // test the data
         } else {
             throw Error(await response.text());
         }
@@ -18,5 +18,8 @@ const apiFetch = async () => {
         console.error('Error fetching data: ', error);
     }
 };
+
+
+
 
 apiFetch();
