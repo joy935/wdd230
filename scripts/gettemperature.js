@@ -37,7 +37,7 @@ function displayWeather(data) {
         let humidity = data.main.humidity;
         let windSpeed = data.wind.speed;
     
-        temperature.innerHTML = `Temperature: ${roundToWhole(temp)}&deg;F`;
+        temperature.innerHTML = `${roundToWhole(temp)}&deg;F - `;
         captionDesc.innerHTML = capitalize(desc);
         weatherIcon.setAttribute('alt', desc);
         weatherIcon.setAttribute('loading', 'lazy');

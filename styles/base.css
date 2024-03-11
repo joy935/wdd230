@@ -139,7 +139,12 @@ section p{
     /* color: #843524; */
     font-size: 22px;
 }
-
+.card-weather {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
 iframe {
     border: 0;
 }
