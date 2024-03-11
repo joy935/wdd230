@@ -1,6 +1,7 @@
 const currentTemp = document.getElementById('current-temp');
 const weatherIcon = document.getElementById('weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const weatherDetails = document.getElementById('weather-details');
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=710bb94f8ac1a0695f7197b282e4ba48";
 
@@ -32,12 +33,31 @@ function displayResults(data) {
     let temp = data.main.temp;
     let desc = data.weather[0].description;
     let icon = data.weather[0].icon;
+    let feelsLike = data.main.feels_like;
+    let humidity = data.main.humidity;
+    let windSpeed = data.wind.speed;
 
     currentTemp.innerHTML = `${roundToWhole(temp)}&deg;F`;
     captionDesc.innerHTML = capitalize(desc);
     weatherIcon.setAttribute('alt', desc);
     weatherIcon.setAttribute('loading', 'lazy');
     weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
+
+    let weatherData = document.createElement('section');
+    let feelsLikeData = document.createElement('p');
+    let humidityData = document.createElement('p');
+    let windSpeedData = document.createElement('p');
+
+    feelsLikeData.textContent = `Feels Like: ${roundToWhole(feelsLike)}&deg;F`;
+    humidityData.textContent = `Humidity: ${humidity}%`;
+    windSpeedData.textContent = `Wind Speed: ${windSpeed} mph`;
+
+    weatherData.appendChild(feelsLikeData);
+    weatherData.appendChild(humidityData);
+    weatherData.appendChild(windSpeedData);
+
+    weatherDetails.appendChild(weatherData);
+
 };
 
 apiFetch();
