@@ -118,7 +118,7 @@
             "links": [
                 {
                     "url": "lesson10/weather.html",
-                    "title": "Weather in Trier, Germany"
+                    "title": "Open Weather API Test"
                 }
             ]
         }
