@@ -48,7 +48,7 @@ function displayResults(data) {
     let humidityData = document.createElement('p');
     let windSpeedData = document.createElement('p');
 
-    feelsLikeData.textContent = `Feels Like: ${roundToWhole(feelsLike)}&deg;F`;
+    feelsLikeData.innerHTML = `Feels Like: ${roundToWhole(feelsLike)}&deg;F`;
     humidityData.textContent = `Humidity: ${humidity}%`;
     windSpeedData.textContent = `Wind Speed: ${windSpeed} mph`;
 
