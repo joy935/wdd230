@@ -10,9 +10,9 @@ const apiFetch = async () => {
 
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
         } else {
-            throw new Error(await response.text());
+            throw Error(await response.text());
         }
     } catch (error) {
         console.error('Error fetching data: ', error);
