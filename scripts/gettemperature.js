@@ -1,24 +1,65 @@
 const temperature = document.getElementById("temperature");
-let infoList = [];
+const weatherIcon = document.getElementById("weather-icon");
+const captionDesc = document.querySelector("figcaption");
+const weatherDetails = document.getElementById("weather-details");
 
-const getTemperature = async () => {
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=47.48&lon=8.21&units=imperial&appid=710bb94f8ac1a0695f7197b282e4ba48";
+
+const getWeather = async () => {
     try {
-        const response = await fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/brugg%20aargau%20switzerland?unitGroup=us&key=TL4E7JG8UXWJPWVKL7GVJ29U2&contentType=json")
-        infoList = await response.json()
-        displayTemperature(infoList)
+        const response = await fetch(url);
+
+        if (response.ok) {
+            const data = await response.json()
+            displayWeather(data)
+        } else {
+            throw Error(await response.text());
+        }
     } catch (error) {
         console.error("Error fetching data: ", error)
     }
 };
 
-const displayTemperature = (infoList) => {
-    if (infoList && infoList.days && infoList.days.length > 0) {
-        const currentDay = infoList.days[0];
-        const currenttemperature = currentDay.temp;
-        document.getElementById("temperature").innerHTML = `Temperature: ${currenttemperature}°F`
+const capitalize = (string) => {
+    return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};
+
+const roundToWhole = (number) => {
+    return Math.round(number);
+};
+
+function displayWeather(data) {
+    if (data.main.temp !== undefined) {
+        let temp = data.main.temp;
+        let desc = data.weather[0].description;
+        let icon = data.weather[0].icon;
+        let feelsLike = data.main.feels_like;
+        let humidity = data.main.humidity;
+        let windSpeed = data.wind.speed;
+    
+        temperature.innerHTML = `Temperature: ${roundToWhole(temp)}&deg;F`;
+        captionDesc.innerHTML = capitalize(desc);
+        weatherIcon.setAttribute('alt', desc);
+        weatherIcon.setAttribute('loading', 'lazy');
+        weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
+    
+        let weatherData = document.createElement('section');
+        let feelsLikeData = document.createElement('p');
+        let humidityData = document.createElement('p');
+        let windSpeedData = document.createElement('p');
+    
+        feelsLikeData.innerHTML = `Feels Like: ${roundToWhole(feelsLike)}&deg;F`;
+        humidityData.textContent = `Humidity: ${humidity}%`;
+        windSpeedData.textContent = `Wind Speed: ${windSpeed} mph`;
+    
+        weatherData.appendChild(feelsLikeData);
+        weatherData.appendChild(humidityData);
+        weatherData.appendChild(windSpeedData);
+    
+        weatherDetails.appendChild(weatherData);   
     } else {
-        document.getElementById("temperature").innerHTML = "Temperature: N/A"
+        temperature.innerHTML = "Temperature: N/A"
     }
 };
 
-getTemperature();
+getWeather();
