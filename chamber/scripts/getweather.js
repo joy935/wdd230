@@ -34,7 +34,7 @@ function displayWeather(data) {
         let icon = data.weather[0].icon;
 
         currentTemp.innerHTML = `${roundToWhole(temp)}&deg;F`;
-        weatherDesc.innerHTML = capitalize(desc);
+        weatherDesc.innerHTML = ` - ${capitalize(desc)}`;
         weatherIcon.setAttribute('alt', desc);
         weatherIcon.setAttribute('loading', 'lazy');
         weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
