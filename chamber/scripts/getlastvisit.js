@@ -22,8 +22,3 @@ if (lastVisit == 0) {
 }
 
 localStorage.setItem('lastVisitTime', currentTime);
-
-console.log('Last visit time:', lastVisit);
-console.log('Current time:', currentTime);
-console.log('Days since last visit:', daysSinceLastVisit);
-console.log('Mins since last visit:', minsSinceLastVisit);
