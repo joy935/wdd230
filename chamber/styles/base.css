@@ -491,7 +491,7 @@ tbody tr:nth-child(even) {
     background-color: var(--accent1-color);
 }
 
-section {
+#directory section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
@@ -518,4 +518,4 @@ section {
 
 .list section:nth-child(even) {
 	background-color: var(--accent1-color);
-}
+} 
