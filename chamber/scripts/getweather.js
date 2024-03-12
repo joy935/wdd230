@@ -18,3 +18,7 @@ const getWeather = async () => {
         console.error("Error fetching data: ", error)
     }
 };
+
+const capitalize = (string) => {
+    return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};
