@@ -20,7 +20,7 @@ const getWeather= async () => {
     try {
         const response = await fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/brugg%20aargau%20switzerland?unitGroup=us&key=TL4E7JG8UXWJPWVKL7GVJ29U2&contentType=json")
         infoList = await response.json()
-        displayTemperature(infoList)
+        // displayTemperature(infoList)
         displayWindchill(infoList)
     } catch (error) {
         console.error("Error fetching data: ", error)
