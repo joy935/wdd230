@@ -4,7 +4,9 @@ const boxevent = document.querySelector('.events-box');
 const contacts = document.querySelectorAll('.contact');
 const memberships = document.querySelectorAll('.memberships');
 
+// check for dark mode preference
 darkMode.addEventListener('change', () => {
+    // if dark mode is enabled
     if (darkMode.checked) {
 		body.classList.add('dark-style');
         memberships.forEach(membership => {
@@ -15,6 +17,7 @@ darkMode.addEventListener('change', () => {
             contact.style.color = 'white';
         });
     }
+    // if dark mode is disabled
     else {
         body.classList.remove('dark-style');
         memberships.forEach(membership => {
