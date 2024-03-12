@@ -172,7 +172,7 @@ input:checked + .slider:before {
     padding: 5px;
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    border-radius: 50%;
+    border-radius: 30%;
     position: absolute;
     top: -20px;
     right: 20px;
