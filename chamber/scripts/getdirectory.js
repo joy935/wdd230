@@ -1,7 +1,10 @@
-const url = "https://joy935.github.io/wdd230/chamber/data/members.json";
+// json file: chamber/data/members.json
+const url = "https://joy935.github.io/wdd230/chamber/data/members.json"; 
 
 const directory = document.querySelector('#directory');
 
+/* getMembers is a function that fetches the json file
+and displays the members listed in the directory */
 const getMembers = async () => {
     try {
         const response = await fetch(url);
@@ -12,8 +15,11 @@ const getMembers = async () => {
     }
 };
 
+/* displayMembers is a function that creates a card for each member
+and displays the member's image, name, address, phone, and website */
 const displayMembers = (members) => {
     members.forEach((member) => {
+        // create the elements
         let card = document.createElement('section');
         let image = document.createElement('img');
         let name = document.createElement('h3');
@@ -21,6 +27,7 @@ const displayMembers = (members) => {
         let phone = document.createElement('p');
         let website = document.createElement('a');
 
+        // set the attributes and text content
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
@@ -32,14 +39,17 @@ const displayMembers = (members) => {
         website.href = `${member.website}`;
         website.textContent = `${member.website}`;
 
+        // append the elements to the card
         card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
 
+        // append the card to the directory
         directory.appendChild(card);
     })
 }
 
+// call the getMembers function
 getMembers();
