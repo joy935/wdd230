@@ -2,8 +2,13 @@ const currentTemp = document.getElementById("temperature");
 const weatherIcon = document.getElementById("weather-icon");
 const weatherDesc = document.querySelector("figcaption");
 
+const weatherThreeDays = document.querySelector(".weather-threeDays");
+
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=47.48&lon=8.21&units=imperial&appid=710bb94f8ac1a0695f7197b282e4ba48";
 
+const threeDaysUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=47.48&lon=8.21&units=imperial&&appid=710bb94f8ac1a0695f7197b282e4ba48"
+
+/* Using the classic url for the weather API */
 const getWeather = async () => {
     try {
         const response = await fetch(url);
@@ -44,4 +49,66 @@ function displayWeather(data) {
     }
 }
 
+/* Using the classic url for the weather API */
+const getThreeDayForecast = async () => {
+    try {
+        const response = await fetch(threeDaysUrl);
+
+        if (response.ok) {
+            const data = await response.json()
+            displayThreeDayForecast(data)
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.error("Error fetching data: ", error)
+    }
+}
+
+function displayThreeDayForecast(data) {
+    let dayOne = document.createElement('p');
+    let dayTwo = document.createElement('p');
+    let dayThree = document.createElement('p');
+
+    let dayPlusOne = data.list[8];
+    let dayPlusTwo = data.list[16];
+    let dayPlusThree = data.list[24];
+
+    let dayPlusOneDay = dayPlusOne.dt_txt;
+    let date = new Date(dayPlusOneDay);
+    let dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    let formattedDate = `${dayOfWeek} ${month}/${day}`;
+
+    let dayPlusTwoDay = dayPlusTwo.dt_txt;
+    let date2 = new Date(dayPlusTwoDay);
+    let dayOfWeek2 = date2.toLocaleString('en-US', { weekday: 'long' });
+    let month2 = date2.getMonth() + 1;
+    let day2 = date2.getDate();
+    let formattedDate2 = `${dayOfWeek2} ${month2}/${day2}`;
+
+    let dayPlusThreeDay = dayPlusThree.dt_txt;
+    let date3 = new Date(dayPlusThreeDay);
+    let dayOfWeek3 = date3.toLocaleString('en-US', { weekday: 'long' });
+    let month3 = date3.getMonth() + 1;
+    let day3 = date3.getDate();
+    let formattedDate3 = `${dayOfWeek3} ${month3}/${day3}`;
+
+    let dayPlusOneTemp = roundToWhole(dayPlusOne.main.temp);
+    let dayPlusTwoTemp = roundToWhole(dayPlusTwo.main.temp);
+    let dayPlusThreeTemp = roundToWhole(dayPlusThree.main.temp);
+
+    dayOne.innerHTML = `<strong>${formattedDate}</strong>: ${dayPlusOneTemp}&deg;F`;
+    dayTwo.innerHTML = `<strong>${formattedDate2}</strong>: ${dayPlusTwoTemp}&deg;F`;
+    dayThree.innerHTML = `<strong>${formattedDate3}</strong>: ${dayPlusThreeTemp}&deg;F`;
+
+    weatherThreeDays.appendChild(dayOne);
+    weatherThreeDays.appendChild(dayTwo);
+    weatherThreeDays.appendChild(dayThree);
+};
+
+
+
 getWeather();
+getThreeDayForecast();
