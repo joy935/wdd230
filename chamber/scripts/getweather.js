@@ -22,3 +22,7 @@ const getWeather = async () => {
 const capitalize = (string) => {
     return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 };
+
+const roundToWhole = (number) => {
+    return Math.round(number);
+}
