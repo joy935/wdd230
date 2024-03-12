@@ -153,12 +153,18 @@ input:checked + .slider:before {
     width: 100%;
     height: auto;
 }
-#hero h2 {
+
+#banner {
     position: absolute;
     bottom: 90px;
+    text-align: center;
+}
+
+#banner-msg {
     color: #0B261A;
     background-color: var(--accent1-color); /* add transparent background */
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 /* call to action JOIN button */
@@ -168,9 +174,6 @@ input:checked + .slider:before {
     padding: 10px;
     font-size: 18px;
     font-weight: 700;
-
-    position: absolute;
-    bottom: 40px;
 }
 
 /*----- main -----*/
