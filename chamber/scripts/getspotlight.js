@@ -7,7 +7,6 @@ const getSpotlight = async () => {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json()
-            // console.log(data)
             displaySpotlight(data.members)
         } else {
             throw Error(await response.text());
@@ -17,8 +16,19 @@ const getSpotlight = async () => {
     }
 };
 
+const randomSpotlight = (members) => {
+    let randomMember = members[Math.floor(Math.random() * members.length)];
+    return randomMember;
+}
+
 const displaySpotlight = (members) => {
-    members.forEach((member) => {
+    let randomMembers = members.filter(member => 
+        member.membership === "gold" || member.membership === "silver"); // filter the members array to only include gold and silver members
+    
+    randomMembers.sort(() => Math.random() - 0.5); // shuffle the array
+    let spotlightMembers = randomMembers.slice(0, 3); // get the first 3 members in the shuffled array
+    
+    spotlightMembers.forEach((member) => {
         let spotlightCard = document.createElement('section');
         spotlightCard.classList.add('spotlight-card');  // add a class to the card
         let image = document.createElement('img');
