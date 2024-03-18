@@ -33,6 +33,7 @@ const displayMembers = (members) => {
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
+        image.setAttribute('target', '_blank');
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
