@@ -32,7 +32,9 @@ const displaySpotlight = (members) => {
     spotlightMembers.forEach((member) => {
         let spotlightCard = document.createElement('section');
         spotlightCard.classList.add('spotlight-card');  // add a class to the card
-        let image = document.createElement('img');
+        let picture = document.createElement('picture');
+        let sourcePic = document.createElement('source');
+        sourcePic.setAttribute('srcset', member.image);
         image.classList.add('card-img'); // add a class to the image
         let name = document.createElement('h3');
         let email = document.createElement('p');
