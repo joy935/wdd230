@@ -5,7 +5,7 @@
             "address": "Annerstrasse 1 Brugg 5200",
             "phone": "+41 11 111 11",
             "website": "http://www.mela-unikat.ch/",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-mela.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-mela_300.webp",
             "membership": "gold",
             "email": "contact@mela-unikat.com",
             "id": 1,
@@ -23,9 +23,9 @@
             "address": "Hauptstrasse 2 Brugg 5200",
             "phone": "+41 22 222 22",
             "website": "http://www.nwsniederberger.ch/",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/b-tooltec_300.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-nsw_300.webp",
             "membership": "gold",
-            "email": "contact@tooltec.com",
+            "email": "contact@nsw.com",
             "id": 2,
             "info": {
                 "fname": "John",
@@ -41,7 +41,7 @@
             "address": "Bahnstrasse 3 Brugg 5200",
             "phone": "+41 33 333 33",
             "website": "https://www.isil-schneiderei.ch/",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-isil.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-isil_300.webp",
             "membership": "gold",
             "email": "contact@isil.com",
             "id": 3,
@@ -59,7 +59,7 @@
             "address": "Hauptstrasse 2 Brugg 5200",
             "phone": "+41 44 444 44",
             "website": "https://www.beck-mor.ch/startseite",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-mor.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-mor_300.webp",
             "membership": "silver",
             "email": "contact@lamer.com",
             "id": 4,
@@ -77,7 +77,7 @@
             "address": "Renggerstrasse 5 Brugg 5200",
             "phone": "+41 55 555 55",
             "website": "https://www.aarsports.ch/Aarsports-Startseite",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-aarsports.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-aarsports_300.webp",
             "membership": "silver",
             "email": "contact@aarsports.com",
             "id": 5,
@@ -95,7 +95,7 @@
             "address": "Stapferstrasse 6 Brugg 5200",
             "phone": "+41 66 666 66",
             "website": "https://puregym.swiss/studio/brugg",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-puregym.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-puregym_300.webp",
             "membership": "bronze",
             "email": "contact@finest.com",
             "id": 6,
@@ -113,7 +113,7 @@
             "address": "Frickstrasse 7 Brugg 5200",
             "phone": "+41 77 777 77",
             "website": "https://sabor.ch/",
-            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-sabor.webp",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/chamber/images/d-sabor_300.webp",
             "membership": "bronze",
             "email": "contact@sabor.com",
             "id": 7,
@@ -127,4 +127,4 @@
             }
         }
     ]
-} 
+}
