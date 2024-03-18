@@ -117,9 +117,9 @@ function displayThreeDayForecast(data) {
     let dayPlusThreeTemp = roundToWhole(dayPlusThree.main.temp);
 
     // set the text content for the elements
-    dayOne.innerHTML = `<strong>${formattedDate}</strong>: ${dayPlusOneTemp}&deg;F`;
-    dayTwo.innerHTML = `<strong>${formattedDate2}</strong>: ${dayPlusTwoTemp}&deg;F`;
-    dayThree.innerHTML = `<strong>${formattedDate3}</strong>: ${dayPlusThreeTemp}&deg;F`;
+    dayOne.innerHTML = `<strong>${formattedDate}</strong> - ${dayPlusOneTemp}&deg;F`;
+    dayTwo.innerHTML = `<strong>${formattedDate2}</strong> - ${dayPlusTwoTemp}&deg;F`;
+    dayThree.innerHTML = `<strong>${formattedDate3}</strong> - ${dayPlusThreeTemp}&deg;F`;
 
     // append the elements to the weatherThreeDays
     weatherThreeDays.appendChild(dayOne);
