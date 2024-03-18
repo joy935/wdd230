@@ -45,7 +45,7 @@ const displaySpotlight = (members) => {
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
-        image.setAttribute('target', '_blank');
+        image.setAttribute('target', '_blank'); // open the link in a new tab
         picture.appendChild(image);
         
         let name = document.createElement('h3');
