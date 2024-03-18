@@ -16,11 +16,6 @@ const getSpotlight = async () => {
     }
 };
 
-const randomSpotlight = (members) => {
-    let randomMember = members[Math.floor(Math.random() * members.length)];
-    return randomMember;
-}
-
 const displaySpotlight = (members) => {
     // filter the members array to only include gold and silver members
     let randomMembers = members.filter(member => 
@@ -32,10 +27,22 @@ const displaySpotlight = (members) => {
     spotlightMembers.forEach((member) => {
         let spotlightCard = document.createElement('section');
         spotlightCard.classList.add('spotlight-card');  // add a class to the card
+
         let picture = document.createElement('picture');
         let sourcePic = document.createElement('source');
-        sourcePic.setAttribute('srcset', member.image);
+        sourcePic.setAttribute('srcset', member.image.replace('300.webp', '180.webp'));
+        sourcePic.setAttribute('media', '(max-width: 200px)');
+        picture.appendChild(sourcePic);
+
+        let image = document.createElement('img');
         image.classList.add('card-img'); // add a class to the image
+        image.setAttribute('src', member.image);
+        image.setAttribute('alt', `Logo of ${member.name}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '300');
+        image.setAttribute('height', 'auto');
+        picture.appendChild(image);
+        
         let name = document.createElement('h3');
         let email = document.createElement('p');
         email.classList.add('contact'); // add a class to the email
@@ -43,27 +50,20 @@ const displaySpotlight = (members) => {
         phone.classList.add('contact'); // add a class to the phone
         let website = document.createElement('a');
         website.classList.add('contact'); // add a class to the website
+        
+        name.textContent = `${member.name}`;
+        email.textContent = `${member.email}`;
+        phone.textContent = `${member.phone}`;
+        website.href = `${member.website}`;
+        website.textContent = `${member.website}`;
 
-        if (member.membership === "gold" || member.membership == "silver") {
-            image.setAttribute('src', member.image);
-            image.setAttribute('alt', `Logo of ${member.name}`);
-            image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '300');
-            image.setAttribute('height', 'auto');
-            name.textContent = `${member.name}`;
-            email.textContent = `${member.email}`;
-            phone.textContent = `${member.phone}`;
-            website.href = `${member.website}`;
-            website.textContent = `${member.website}`;
+        spotlightCard.appendChild(picture);
+        spotlightCard.appendChild(name);
+        spotlightCard.appendChild(email);
+        spotlightCard.appendChild(phone);
+        spotlightCard.appendChild(website);
 
-            spotlightCard.appendChild(image);
-            spotlightCard.appendChild(name);
-            spotlightCard.appendChild(email);
-            spotlightCard.appendChild(phone);
-            spotlightCard.appendChild(website);
-
-            pleinfeux.appendChild(spotlightCard);
-        }
+        pleinfeux.appendChild(spotlightCard);
 
     });
 };
