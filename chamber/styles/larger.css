@@ -34,7 +34,7 @@
     }
 
     /* remove border and shadow from spotlight cards */
-    .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
+    .spotlight-card {
         border: none;
         box-shadow: none;
     }
