@@ -2,6 +2,8 @@ const pleinfeux = document.querySelector('.plein-feux');
 
 const url = "https://joy935.github.io/wdd230/chamber/data/members.json";
 
+/* getSpotlight is a function that fetches the json file
+and displays the members listed in the spotlight */
 const getSpotlight = async () => {
     try {
         const response = await fetch(url);
@@ -16,6 +18,8 @@ const getSpotlight = async () => {
     }
 };
 
+/* displaySpotlight is a function that creates a card for each silver or gold 
+member of the Chamber and displays the member's logo, name, address, phone, and website */
 const displaySpotlight = (members) => {
     // filter the members array to only include gold and silver members
     let randomMembers = members.filter(member => 
