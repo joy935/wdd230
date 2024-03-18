@@ -256,22 +256,13 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.spotlight-1-card {
-    grid-column: 1 / 2;
-}
-.spotlight-2-card {
-    grid-column: 2 / 3;
-}
-.spotlight-3-card {
-    grid-column: 3 / 4;
-}
-.spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
+.spotlight-card{
     border: 1px solid #274F32;
     padding: 10px;
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
-.about-card, .news-card, .weather-card, .spotlight-1-card, .spotlight-2-card, .spotlight-3-card {
+.about-card, .news-card, .weather-card, .spotlight-card {
     text-align: center;
     padding: 20px;
 }
@@ -538,4 +529,4 @@ tbody tr:nth-child(even) {
 
 .list section:nth-child(even) {
 	background-color: var(--accent1-color);
-} 
+}
