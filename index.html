@@ -22,16 +22,15 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <!-- link to font for this page -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header>
         <img src="images/veihi-image.webp" alt="profile photo" class="photovei">
         <h1>Veihi Tupai</h1>
     </header>
+
     <button id="menu" title="hamburger-menu"></button> 
     <nav class="navigation">
         <a href="#" class="active">Home</a>
@@ -41,43 +40,47 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" target="_blank">Scripture</a>
         <a href="form.html">Register</a>
     </nav>
-       <main>
-            <div class="hero">
-                <picture>
-                    <source media="(max-width: 400px)" srcset="images/temple-small.webp">
-                    <img src="images/temple-large.webp" alt="papeete tahiti temple">
-                </picture>
-                <div class="hero-label">
-                    <div>Papeete Tahiti Temple</div>
-                </div>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/temple-small.webp">
+                <img src="images/temple-large.webp" alt="papeete tahiti temple">
+            </picture>
+            <div class="hero-label">
+                <div>Papeete Tahiti Temple</div>
             </div>
-            <h2>WDD 230: Web Frontend Development</h2>
-            <hr>   
-            <section class="card-act">
-                <h3>Learning Activities</h3>
-                <div id="links"></div>
-            </section>
-            <section class="card-info">
-                <h3>Information</h3>
-                <p>Brugg, Switzerland</p>
-                <hr class="separator">
-                <div id="card-weather">
-                    <figure class="card-weather">
-                        <img id="weather-icon" src="default" alt="">
-                        <p id="temperature"></p>
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-                <p><span id="weather-details"></span></p>
-                <hr class="separator">
-                <p id="visits"></p>
-            </section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86296.85468768925!2d8.04389189099433!3d47.474780554391266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47906abbf4357c0b%3A0x6a5c212f0418922e!2sBrugg!5e0!3m2!1sen!2sch!4v1706105936533!5m2!1sen!2sch" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="address-veihi"></iframe>
-        </main>
+        </div>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <hr>   
+        <section class="card-act">
+            <h3>Learning Activities</h3>
+            <div id="links"></div>
+        </section>
+        <section class="card-info">
+            <h3>Information</h3>
+            <p>Brugg, Switzerland</p>
+            <hr class="separator">
+            <div id="card-weather">
+                <figure class="card-weather">
+                    <img id="weather-icon" src="default" alt="">
+                    <p id="temperature"></p>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <p><span id="weather-details"></span></p>
+            <hr class="separator">
+            <p id="visits"></p>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86296.85468768925!2d8.04389189099433!3d47.474780554391266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47906abbf4357c0b%3A0x6a5c212f0418922e!2sBrugg!5e0!3m2!1sen!2sch!4v1706105936533!5m2!1sen!2sch" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="address-veihi"></iframe>
+    </main>
+
     <footer>
         <p>&copy; <span id="year"></span> | Veihi Tupai | Switzerland <img src="https://flagcdn.com/16x12/ch.png" srcset="https://flagcdn.com/32x24/ch.png 2x, https://flagcdn.com/48x36/ch.png 3x" width="16" height="12" alt="flag"></p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+    
+    <!-- link JavaScript files -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/gettemperature.js" type="module"></script>
