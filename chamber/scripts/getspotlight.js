@@ -22,8 +22,9 @@ const randomSpotlight = (members) => {
 }
 
 const displaySpotlight = (members) => {
+    // filter the members array to only include gold and silver members
     let randomMembers = members.filter(member => 
-        member.membership === "gold" || member.membership === "silver"); // filter the members array to only include gold and silver members
+        member.membership === "gold" || member.membership === "silver"); 
     
     randomMembers.sort(() => Math.random() - 0.5); // shuffle the array
     let spotlightMembers = randomMembers.slice(0, 3); // get the first 3 members in the shuffled array
