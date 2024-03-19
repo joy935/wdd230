@@ -41,7 +41,7 @@ function displayWeather(data) {
         captionDesc.innerHTML = capitalize(desc);
         weatherIcon.setAttribute('alt', desc);
         weatherIcon.setAttribute('loading', 'lazy');
-        weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
+        weatherIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
     
         let weatherData = document.createElement('section');
         let feelsLikeData = document.createElement('p');

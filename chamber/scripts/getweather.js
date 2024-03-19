@@ -49,7 +49,7 @@ function displayWeather(data) {
         weatherDesc.innerHTML = `- ${capitalize(desc)}`;
         weatherIcon.setAttribute('alt', desc);
         weatherIcon.setAttribute('loading', 'lazy');
-        weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
+        weatherIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
     }
     else {
         console.error("Temperature: N/A");
