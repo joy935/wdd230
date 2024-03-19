@@ -12,6 +12,10 @@
     #menu {
         display: none;
     }
+
+    #banner {
+        bottom: 90px;
+    }
     /* toggle switch */
     header {
         position: relative;

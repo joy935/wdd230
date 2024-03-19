@@ -160,7 +160,7 @@ input:checked + .slider:before {
 
 #banner {
     position: absolute;
-    bottom: 90px;
+    bottom: 40px;
     text-align: center;
     width: 100%;
 }
