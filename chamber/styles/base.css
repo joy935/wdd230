@@ -189,24 +189,18 @@ input:checked + .slider:before {
 
 /* call to action JOIN button */
 
-/* #join-card {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-} */
-
 #join-card {
-    position: relative;
+    position: absolute;
+    bottom: 10px;
     text-align: center;
 }
+
 #join {
     background-color: var(--accent2-color);
     color: black;
     padding: 15px;
     font-size: 16px;
     font-weight: 700;
-    width: 100%;
-    display: block;
 }
 
 /*----- main -----*/
