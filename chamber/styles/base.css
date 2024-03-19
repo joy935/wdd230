@@ -39,6 +39,10 @@ header {
     justify-content: left;
 }
 
+h1 {
+    width: 70%;
+}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
@@ -92,9 +96,9 @@ h1, h2, h3 {
     position: absolute;
     display: inline-block;
     top: 5rem;
-    right: 0.7rem;
-    width: 78px;
-    height: 52px;
+    right: 1rem;
+    width: 72px;
+    height: 46px;
 }
 
 .switch input {
@@ -118,8 +122,8 @@ h1, h2, h3 {
 .slider:before {
     position: absolute;
     content: "";
-    height: 44px;
-    width: 44px;
+    height: 38px;
+    width: 38px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -171,13 +175,13 @@ input:checked + .slider:before {
 
 #close-banner::before {
     content: "✖";
-    padding: 15px;
-    font-size: 25px;
+    padding: 10px;
+    font-size: 20px;
     background-color: #9d2121;
     color: var(--accent1-color);
     border-radius: 30%;
     position: absolute;
-    top: -45px;
+    top: -30px;
     right: 10px;
     margin-right: 10px;
     cursor: pointer;;
@@ -192,8 +196,8 @@ input:checked + .slider:before {
 #join {
     background-color: var(--accent2-color);
     color: black;
-    padding: 20px;
-    font-size: 18px;
+    padding: 15px;
+    font-size: 16px;
     font-weight: 700;
     border-radius: 10%;
 }
