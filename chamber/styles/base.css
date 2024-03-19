@@ -93,8 +93,8 @@ h1, h2, h3 {
     display: inline-block;
     top: 4rem;
     right: 1rem;
-    width: 60px;
-    height: 34px;
+    width: 78px;
+    height: 52px;
 }
 
 .switch input {
@@ -118,8 +118,8 @@ h1, h2, h3 {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 44px;
+    width: 44px;
     left: 4px;
     bottom: 4px;
     background-color: white;
