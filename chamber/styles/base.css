@@ -158,19 +158,21 @@ input:checked + .slider:before {
     position: absolute;
     bottom: 90px;
     text-align: center;
+    width: 100%;
 }
 
 #banner-msg {
-    color: #0B261A;
+    color: #9d2121;
     background-color: var(--accent1-color); /* add transparent background */
     padding: 10px;
     margin-bottom: 20px;
+    border: 1px solid #9d2121;
 }
 
 #close-banner::before {
     content: "✖";
     padding: 5px;
-    background-color: var(--primary-color);
+    background-color: #9d2121;
     color: var(--accent1-color);
     border-radius: 30%;
     position: absolute;
