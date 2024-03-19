@@ -1,7 +1,5 @@
 const password1 = document.querySelector('#password');
-console.log(password1);
 const password2 = document.querySelector('#password2');
-console.log(password2);
 
 /* create error message */
 const errorMessage = document.createElement('p');
