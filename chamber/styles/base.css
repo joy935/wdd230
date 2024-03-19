@@ -212,7 +212,6 @@ h3 {
 
 .home-grid {
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
 .discover-box, .events-box, .plein-feux {
@@ -221,18 +220,8 @@ h3 {
 }
 
 .discover-box {
-    /* grid-row: 1 / 2; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-.about-card {
-    grid-column: 1 / 2;
-}
-.news-card {
-    grid-column: 2 / 3;
-}
-.weather-card {
-    grid-column: 3 / 4;
 }
 .weather-display {
     display: flex;
@@ -251,7 +240,6 @@ h3 {
 
 .events-box {
     display: grid;
-    /* grid-row: 2 / 3; */
     background-color: var(--accent1-color);
     align-items: center;
     text-align: center;
@@ -262,7 +250,6 @@ h3 {
 }
 
 .plein-feux {
-    /* grid-row: 3 / 4; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
