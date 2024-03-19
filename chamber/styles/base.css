@@ -188,9 +188,15 @@ input:checked + .slider:before {
 }
 
 /* call to action JOIN button */
-#join-card {
+
+/* #join-card {
     position: absolute;
     bottom: 20px;
+    text-align: center;
+} */
+
+#join-card {
+    position: relative;
     text-align: center;
 }
 #join {
@@ -199,7 +205,8 @@ input:checked + .slider:before {
     padding: 15px;
     font-size: 16px;
     font-weight: 700;
-    border-radius: 10%;
+    width: 100%;
+    display: block;
 }
 
 /*----- main -----*/
