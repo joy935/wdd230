@@ -479,6 +479,10 @@ tbody tr:nth-child(even) {
 }
 
 /*---------- thank you page ----------*/
+.thanks-box {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 .thank-you {
     text-align: center;
     padding: 1rem;
