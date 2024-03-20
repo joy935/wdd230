@@ -98,6 +98,11 @@
         grid-column: 2 / 3;
     }
 
+    /*------------ THANK YOU PAGE ------------*/
+    .thanks-box {
+        padding-bottom: 22rem;
+    }
+
     /*---------- DISCOVER PAGE ----------*/
     .list {
         display: flex;
@@ -114,4 +119,4 @@
     .list section > * {
         margin: 0 1rem;
     }
-} 
+}
