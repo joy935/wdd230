@@ -430,6 +430,9 @@ form input.submitBtn {
     background-color: var(--secondary-color);
 }
 /* memberships */
+.table-membership {
+    overflow-x: auto;
+}
 table {
     margin: 10px auto;
     border: 1px solid var(--primary-color);
@@ -447,8 +450,8 @@ caption {
 
 th, td {
     padding: 5px 13px;
+    text-align: center;
 }
-
 th {
     background-color: var(--primary-color);
     color: white;
