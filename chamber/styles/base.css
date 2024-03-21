@@ -249,6 +249,12 @@ h3 {
     margin: 0 auto; /* center the image horizontally */
 }
 
+.event-card h4 {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .plein-feux {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
