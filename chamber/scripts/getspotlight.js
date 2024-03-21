@@ -31,8 +31,14 @@ const displaySpotlight = (members) => {
     spotlightMembers.forEach((member) => {
         let spotlightCard = document.createElement('section');
         spotlightCard.classList.add('spotlight-card');  // add a class to the card
-
+        
+        let cardBox = document.createElement('div');
+        cardBox.classList.add('card-img'); // add a class to the card-img
+        spotlightCard.appendChild(cardBox);
+        
         let picture = document.createElement('picture');
+        cardBox.appendChild(picture);
+        
         let sourcePic = document.createElement('source');
         sourcePic.setAttribute('srcset', member.image.replace('300.webp', '180.webp'));
         sourcePic.setAttribute('media', '(max-width: 200px)');
@@ -62,7 +68,6 @@ const displaySpotlight = (members) => {
         website.href = `${member.website}`;
         website.textContent = `${member.website}`;
 
-        spotlightCard.appendChild(picture);
         spotlightCard.appendChild(name);
         spotlightCard.appendChild(email);
         spotlightCard.appendChild(phone);
