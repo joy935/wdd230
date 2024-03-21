@@ -232,7 +232,7 @@ h3 {
 .weather-threeDays {
     padding-top: 10px;
 }
-.card-img img, .event-img img {
+.card-img img {
     max-width: 180px;
     width: 100%;
     height: auto;
