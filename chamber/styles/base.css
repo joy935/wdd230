@@ -338,6 +338,9 @@ hr {
 .sidebar-right img {
     margin-bottom: 0.5rem;
     box-shadow: 10px 10px 4px #000;
+    width: 90%;
+    height: auto;
+    max-width: 400px;
 }
 .sidebar-right p {
     margin-bottom: 1.5rem;
