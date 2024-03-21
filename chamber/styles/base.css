@@ -425,9 +425,8 @@ form input.submitBtn {
     max-width: 25rem;
     font-size: 1rem;
 }
-
 .submitBtn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 /* memberships */
 .table-membership {
