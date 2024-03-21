@@ -12,7 +12,9 @@
     #menu {
         display: none;
     }
-
+    h1 {
+        margin: 0.67em 0;
+      }
     #banner {
         bottom: 90px;
     }
