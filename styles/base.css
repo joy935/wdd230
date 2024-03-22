@@ -58,7 +58,6 @@ header {
     align-items: center; /*center-align vertically*/
 }
 .photovei{
-    display: block;
     max-width: 20%;
     height: auto;
     border-radius: 5%; /* corner radius */
