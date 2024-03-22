@@ -30,7 +30,6 @@ const displayMembers = (members) => {
         // set the attributes and text content
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Logo of ${member.name}`);
-        image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
         image.setAttribute('target', '_blank'); // open the link in a new tab
