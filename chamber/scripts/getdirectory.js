@@ -27,6 +27,9 @@ const displayMembers = (members) => {
         let phone = document.createElement('p');
         let website = document.createElement('a');
 
+        // set the card attributes
+        card.setAttribute('max-width', '300px');
+
         // set the attributes and text content
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Logo of ${member.name}`);
