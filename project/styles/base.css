@@ -19,3 +19,20 @@ body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
+
+/*---------- HOMEPAGE ----------*/
+/*----- header -----*/
+#scoots-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+/*----- nav -----*/
+/*----- hamburger menu -----*/
+/*----- footer -----*/
+
+/*---------- RESERVATION PAGE ----------*/
+/*---------- RENTALS PAGE ----------*/
+/*---------- CONTACT PAGE ----------*/
+/*---------- THANK YOU PAGE ----------*/
+
