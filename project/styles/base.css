@@ -43,14 +43,11 @@ header {
     position: absolute;
     display: inline-block;
     top: 5rem;
-    right: 1rem;
+    right: 1.1rem;
 }
 .sm-logo {
     width: 45px;
     border-radius: 10px;
-}
-.instagram {
-    right: 5rem;
 }
 h1, h2, h3, h4 {
     font-family: 'Kaushan Script', cursive;
