@@ -72,12 +72,12 @@ h1, h2, h3, h4 {
     content: '✖';
 }
 .navigation a:hover {
-    font-weight: bold;
+    background-color: var(--primary-color);
 }
 .open a {
     display: block;
 }
-.active::before {
+.active {
     background-color: var(--primary-color);
 }
 /*----- hamburger menu -----*/
@@ -87,4 +87,3 @@ h1, h2, h3, h4 {
 /*---------- RENTALS PAGE ----------*/
 /*---------- CONTACT PAGE ----------*/
 /*---------- THANK YOU PAGE ----------*/
-
