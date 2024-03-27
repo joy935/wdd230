@@ -47,7 +47,6 @@ h1, h2, h3, h4 {
 }
 
 .navigation a {
-    /* display: none; */
     padding: 2rem;
     text-align: center;
     text-decoration: none;
@@ -55,6 +54,7 @@ h1, h2, h3, h4 {
     font-size: 18px;
 }
 
+/*----- hamburger menu -----*/
 #menu {
     position: absolute;
     top: 1rem;
@@ -64,7 +64,6 @@ h1, h2, h3, h4 {
     border-radius: 10px;
     background-color: var(--accent1-color);
 }
-
 #menu::before {
     content: '☰';
 }
@@ -80,7 +79,56 @@ h1, h2, h3, h4 {
 .active {
     background-color: var(--primary-color);
 }
-/*----- hamburger menu -----*/
+
+/*----- toogle switch dark mode -----*/
+.switch {
+    position: absolute;
+    display: inline-block;
+    top: 5rem;
+    right: 1rem;
+    width: 72px;
+    height: 46px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    border-radius: 100px;
+    content: '';
+    height: 38px;
+    width: 38px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: var(--secondary-color);
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-color);
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
 /*----- footer -----*/
 
 /*---------- RESERVATION PAGE ----------*/
