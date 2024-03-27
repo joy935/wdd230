@@ -21,22 +21,39 @@ body {
 }
 
 /*---------- HOMEPAGE ----------*/
-/*----- header -----*/
+/*---------- header ----------*/
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    justify-content: left;
+    width: 100%;
+
+}
+/*----- logo -----*/
 .scoots-logo {
     width: 100px;
     height: auto;
     border-radius: 10px;
+    border: 1px solid var(--third-color);
 }
-
+.social-media {
+    position: absolute;
+    display: inline-block;
+    top: 5rem;
+    right: 1rem;
+}
 .sm-logo {
-    width: 50px;
-    height: auto;
-    border-radius: 10px
+    width: 45px;
+    border-radius: 10px;
 }
-
+.instagram {
+    right: 5rem;
+}
 h1, h2, h3, h4 {
     font-family: 'Kaushan Script', cursive;
-
 }
 /*----- responsive nav -----*/
 .navigation {
@@ -84,7 +101,7 @@ h1, h2, h3, h4 {
 .switch {
     position: absolute;
     display: inline-block;
-    top: 5rem;
+    top: 10rem;
     right: 1rem;
     width: 72px;
     height: 46px;
