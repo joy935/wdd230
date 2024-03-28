@@ -152,6 +152,12 @@ footer {
     text-align: center;
     color: var(--third-color);
 }
+footer .scoots-logo {
+    margin: 0 auto;
+}
+footer section {
+    padding-top: 1rem;
+}
 hr {
     width: 100%;
     border: none;

@@ -37,6 +37,6 @@
         grid-column: 3 / 4;
     }
     .author {
-        grid-column: 1 / 4;
+        grid-column: 2 / 4;
     }
 }
