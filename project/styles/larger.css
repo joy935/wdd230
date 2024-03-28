@@ -4,6 +4,9 @@
         display: flex;
         flex-direction: row;
     }
+    .navigation a {
+        display: block;
+    }
     #menu {
         display: none;
     }
