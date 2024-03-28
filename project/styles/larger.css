@@ -9,6 +9,7 @@
     }
     header {
         position: relative;
+        padding: 20px;
     }
     .switch {
         position: absolute;

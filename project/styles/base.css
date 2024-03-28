@@ -7,13 +7,11 @@
     --accent1-color: #A9B3B4;
     --accent2-color: #E9B4A8;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     max-width: 1400px;
     margin: 0 auto;
@@ -26,11 +24,9 @@ header {
     background-color: var(--primary-color);
     width: 100%;
     display: flex;
-    padding: 20px;
+    padding: 45px;
     gap: 10px;
     justify-content: left;
-    width: 100%;
-
 }
 /*----- logo -----*/
 .scoots-logo {
