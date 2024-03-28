@@ -148,7 +148,7 @@ footer {
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
     color: var(--third-color);
 }
