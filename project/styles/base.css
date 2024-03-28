@@ -144,7 +144,21 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 /*----- footer -----*/
+footer {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    text-align: center;
+    color: var(--third-color);
+}
+.author {
+    text-align: center;
+}
 
+/* footer .scoots-logo {
+    margin: 0 auto;
+} */
 /*---------- RESERVATION PAGE ----------*/
 /*---------- RENTALS PAGE ----------*/
 /*---------- CONTACT PAGE ----------*/
