@@ -48,6 +48,10 @@ header {
 h1, h2, h3, h4 {
     font-family: 'Kaushan Script', cursive;
 }
+h1 {
+    width: 45%;
+
+}
 /*----- responsive nav -----*/
 .navigation {
     display: flex;
