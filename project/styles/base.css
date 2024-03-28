@@ -149,6 +149,9 @@ input:checked + .slider:before {
     background-color: black;
     color: white;
 }
+/*----- hero -----*/
+
+
 /*----- footer -----*/
 footer {
     background-color: var(--primary-color);
