@@ -150,7 +150,11 @@ input:checked + .slider:before {
     color: white;
 }
 /*----- hero -----*/
-
+.hero-img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 
 /*----- footer -----*/
 footer {
