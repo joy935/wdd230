@@ -193,14 +193,13 @@ input:checked + .slider:before {
     padding: 20px;
     text-align: center;
     position: relative;
-    
+    width: 100%;
+    margin-bottom: 10px;
 }
-#reserve-button {
+#reserve {
     background-color: var(--primary-color);
-    color: var(--third-color);
     padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
+    border: 1px solid var(--third-color);
     cursor: pointer;
 }
 /*----- footer -----*/
