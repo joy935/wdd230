@@ -182,7 +182,27 @@ input:checked + .slider:before {
     padding: 5px;
     cursor: pointer;
 }
-
+/*----- reserve msg and button -----*/
+#reserve-box {
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+}
+.reserve-msg {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    
+}
+#reserve-button {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 /*----- footer -----*/
 footer {
     background-color: var(--primary-color);
