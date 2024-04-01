@@ -162,6 +162,27 @@ input:checked + .slider:before {
     height: auto;
 }
 
+/*----- hero banner -----*/
+.hero-banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+#hero-banner {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    border: 3px solid #9D2121;
+}
+#close-banner::before {
+    content: '✖';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
 /*----- footer -----*/
 footer {
     background-color: var(--primary-color);
