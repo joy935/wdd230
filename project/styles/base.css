@@ -200,6 +200,7 @@ input:checked + .slider:before {
     background-color: var(--primary-color);
     padding: 10px 20px;
     border: 1px solid var(--third-color);
+    border-radius: 100px;
     cursor: pointer;
 }
 /*----- footer -----*/
