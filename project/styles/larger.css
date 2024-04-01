@@ -23,12 +23,6 @@
         height: 46px;
     }
 
-    /* responsive hero banner */
-    .hero-banner {
-        position: absolute;
-        bottom: 1rem;
-    }
-
     /* responsive footer */
     footer {
         display: grid;
