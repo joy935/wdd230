@@ -1,4 +1,4 @@
-const closeHeroBannerBtn = document.getElementById('close-hero-banner');
+const closeHeroBannerBtn = document.getElementById('close-banner');
 
 // Close the hero banner when clicked
 closeHeroBannerBtn.addEventListener('click', () => {
