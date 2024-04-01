@@ -150,10 +150,16 @@ input:checked + .slider:before {
     color: white;
 }
 /*----- hero -----*/
-.hero-img {
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero-img img {
     width: 100%;
     height: auto;
-    text-align: center;
 }
 
 /*----- footer -----*/
