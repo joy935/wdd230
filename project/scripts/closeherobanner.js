@@ -4,4 +4,5 @@ const closeHeroBannerBtn = document.getElementById('close-banner');
 closeHeroBannerBtn.addEventListener('click', () => {
   const heroBanner = document.getElementById('hero-banner');
   heroBanner.style.display = 'none';
+  closeHeroBannerBtn.style.display = 'none';
 });
