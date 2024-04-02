@@ -175,14 +175,15 @@ input:checked + .slider:before {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
-#close-banner::before {
-    content: '✖';
+#close-banner {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.3rem;
+    right: 0.5rem;
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 1px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 /*----- reserve msg and button -----*/
 #reserve-box {
