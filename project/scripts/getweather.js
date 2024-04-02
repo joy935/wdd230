@@ -11,8 +11,7 @@ const getWeather = async () => {
         const response = await fetch(mltDays);
         if (response.ok) {
             const data = await response.json()
-            console.log(data)
-            // displayWeather(data)
+            displayWeather(data)
         } else {
             throw Error(await response.text());
         }
@@ -20,5 +19,35 @@ const getWeather = async () => {
         console.error("Error fetching data: ", error)
     }
 };
+
+const capitalize = (string) => {
+    return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+const roundToWhole = (number) => {
+    return Math.round(number);
+}
+
+function displayWeather(data) {
+    if (data.list[0].main.temp !== undefined) {
+        let temp = data.list[0].main.temp;
+        let humidity = data.list[0].main.humidity;
+        let desc = data.list[0].weather[0].description;
+        let icon = data.list[0].weather[0].icon;
+
+        currentTemp.innerHTML = `${roundToWhole(temp)}&deg;F`;
+        currentHumidity.innerHTML = `${humidity}%`;
+        weatherDesc.innerHTML = `${capitalize(desc)}`;
+        currentIcon.setAttribute('alt', desc);
+        currentIcon.setAttribute('loading', 'lazy');
+        currentIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
+
+        let tempTomorrow = data.list[8].main.temp;
+        tomorrowTemp.innerHTML = `${roundToWhole(tempTomorrow)}&deg;F`;
+    }
+    else {
+        console.error("Temperature: N/A");
+    }
+}
 
 getWeather();
