@@ -6,7 +6,7 @@ const weatherThreeDays = document.querySelector(".weather-threeDays");
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=47.48&lon=8.21&units=imperial&appid=710bb94f8ac1a0695f7197b282e4ba48";
 
-const threeDaysUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=47.48&lon=8.21&units=imperial&&appid=710bb94f8ac1a0695f7197b282e4ba48"
+const threeDaysUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=47.48&lon=8.21&units=imperial&&appid=710bb94f8ac1a0695f7197b282e4ba48";
 
 /* Using the classic url for the weather API */
 /* getWeather is a function that fetches the weather data and displays 
