@@ -29,7 +29,7 @@ data and displays the max temperature */
 const displayMaxTemp = (data) => {
     if (data.main.temp_max !== undefined) {
         let temp = data.main.temp_max;
-        maxTemp.innerHTML = `Maximum Temperature Today: ${roundToWhole(temp)}&deg;F`;
+        maxTemp.innerHTML = `Highest Temperature Today: ${roundToWhole(temp)}&deg;F`;
     }
     else {
         console.error("Max Temperature: N/A");
