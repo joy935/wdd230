@@ -24,7 +24,7 @@ const capitalize = (string) => {
     return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
 
-const roundToWhole = (number) => {
+const round = (number) => {
     return Math.round(number);
 }
 
@@ -35,7 +35,7 @@ function displayWeather(data) {
         let desc = data.list[0].weather[0].description;
         let icon = data.list[0].weather[0].icon;
 
-        currentTemp.innerHTML = `${roundToWhole(temp)}&deg;F`;
+        currentTemp.innerHTML = `${round(temp)}&deg;F`;
         currentHumidity.innerHTML = `${humidity}%`;
         weatherDesc.innerHTML = `${capitalize(desc)}`;
         currentIcon.setAttribute('alt', desc);
