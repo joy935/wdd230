@@ -209,14 +209,18 @@ input:checked + .slider:before {
 }
 /*----- carrousel -----*/
 .carrousel-box {
-    width: 100%;
-    max-width: 400px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
     border: 1px solid var(--third-color);
 }
 .slides {
     display: none;
+}
+.slide img {
+    width: 100%;
+    max-width: 500px; /* check later */
+    height: auto;
 }
 .prev, .next {
     cursor: pointer;
@@ -247,13 +251,6 @@ input:checked + .slider:before {
     bottom: 1px;
     width: 100%;
     text-align: center;
-}
-.text {
-    color: var(--third-color);
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
 }
 .dot {
     cursor: pointer;
