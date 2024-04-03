@@ -80,42 +80,43 @@
 
     <main class="home-grid">
         <!-- carrousel of the rental options -->
-        <div class="carrousel-box">
-            <!-- slides -->
-            <div class="slides">
-                <img class="slidepic" src="images/hondadiogreen400.webp" alt="Honda Dio">
-                <div class="caption">Honda Dio</div>
+        <article>
+            <div class="carrousel-box">
+                <!-- slides -->
+                <div class="slides">
+                    <img class="slidepic" src="images/hondadiogreen300.webp" alt="Honda Dio" width="300px" height="auto>
+                    <div class="caption">Honda Dio</div>
+                </div>
+                <div class="slides">
+                    <img class="slidepic" src="images/hondametrogreen300.webp" alt="Honda Metro" width="300px" height="auto">
+                    <div class="caption">Honda Dio</div>
+                </div>
+                <div class="slides">
+                    <img class="slidepic" src="images/hondapcxred300.webp" alt="Honda PCX" width="300px" height="auto">
+                    <div class="caption">Honda PCX</div>
+                </div> 
+                <div class="slides">
+                    <img class="slidepic" src="images/hondapioneerred300.webp" alt="Honda Pioneer" width="300px" height="auto>
+                    <div class="caption">Honda Pioneer</div>
+                </div>
+                <div class="slides">
+                    <img class="slidepic" src="images/jeepwangler2doorsred300.webp" alt="Jeep Wangler 2 Doors" width="300px" height="auto>
+                    <div class="caption">Jeep Wangler 2 Doors</div>
+                </div> 
+                <!-- buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div class="slides">
-                <img class="slidepic" src="images/hondametrogreen400.webp" alt="Honda Metro" width="400px" height="auto">
-                <div class="caption">Honda Dio</div>
+            <br>
+            <!-- dots -->
+            <div id="dot-follow" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
-            <div class="slides">
-                <img class="slidepic" src="images/hondapcxred400.webp" alt="Honda PCX" width="400px" height="auto">
-                <div class="caption">Honda PCX</div>
-            </div> 
-            <div class="slides">
-                <img class="slidepic" src="images/hondapioneerred400.webp" alt="Honda Pioneer">
-                <div class="caption">Honda Pioneer</div>
-            </div>
-            <div class="slides">
-                <img class="slidepic" src="images/jeepwangler2doorsred400.webp" alt="Jeep Wangler 2 Doors">
-                <div class="caption">Jeep Wangler 2 Doors</div>
-            </div> 
-            <!-- buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <!-- dots -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-
+        </article>
         <!-- weather card -->
         <section class="weather-card">
             <h3>Weather in Cozumel</h3>
