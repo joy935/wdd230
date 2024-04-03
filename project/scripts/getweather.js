@@ -13,6 +13,7 @@ const getWeather = async () => {
         if (response.ok) {
             const data = await response.json()
             displayWeather(data)
+            getNextDay(data)
         } else {
             throw Error(await response.text());
         }
@@ -31,8 +32,8 @@ const round = (number) => {
 
 function displayWeather(data) {
     if (data.list[0].main.temp !== undefined) {
-        let temp = data.list[0].main.temp;
-        let humidity = data.list[0].main.humidity;
+        const temp = data.list[0].main.temp;
+        const humidity = data.list[0].main.humidity;
         let desc = data.list[0].weather[0].description;
         let icon = data.list[0].weather[0].icon;
 
@@ -42,12 +43,24 @@ function displayWeather(data) {
         currentIcon.setAttribute('alt', desc);
         currentIcon.setAttribute('loading', 'lazy');
         currentIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
-
-        let tempTomorrow = data.list[8].main.temp;
-        tomorrowTemp.innerHTML = `Temperature ${round(tempTomorrow)}&deg;F`;
     }
     else {
         console.error("Temperature: N/A");
+    }
+}
+
+function getNextDay(data) {
+    const todayDate = new Date(data.list[0].dt_txt);
+    const nextDay = new Date(todayDate +1);
+    const tomorrowForecast = data.list.filter(item => {
+        const itemDate = new Date(item.dt_txt);
+        return itemDate.getDate() === nextDay.getDate() && itemDate.getHours() === 15;
+    });
+    if (tomorrowForecast[0].main.temp !== undefined) {
+        const temp = tomorrowForecast[0].main.temp;
+        tomorrowTemp.innerHTML = `Temperature at 3PM : ${round(temp)}&deg;F`;
+    } else {
+        console.error("Temperature at 3PM: N/A");
     }
 }
 
