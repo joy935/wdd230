@@ -278,7 +278,6 @@ input:checked + .slider:before {
     gap: 10px;
     padding: 10px;
     text-align: center;
-    justify-content: center;
     align-items: center;
 }
 #special-offer {
