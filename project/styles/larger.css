@@ -31,7 +31,6 @@
         padding: 0.25rem;
     }
     
-
     /* responsive footer */
     footer {
         display: grid;
@@ -52,5 +51,10 @@
     }
     .author {
         grid-column: 2 / 4;
+    }
+
+    /* RESERVATION PAGE */
+    .reservepage-msg {
+        font-size: 35px;
     }
 }

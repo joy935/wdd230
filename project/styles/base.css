@@ -326,8 +326,18 @@ hr {
 .author {
     text-align: center;
 }
-
 /*---------- RESERVATION PAGE ----------*/
+#reservepage-card {
+    position: absolute;
+}
+#reservepage-hero {
+    filter: opacity(0.5);
+}
+.reservepage-msg {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+}
 /*---------- RENTALS PAGE ----------*/
 /*---------- CONTACT PAGE ----------*/
 /*---------- THANK YOU PAGE ----------*/
