@@ -278,11 +278,23 @@ input:checked + .slider:before {
     gap: 10px;
     padding: 10px;
     text-align: center;
+    justify-content: center;
     align-items: center;
 }
 #special-offer {
     background-color: var(--primary-color);
     padding: 20px;
+}
+.title {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.info-card {
+    padding: 10px;
+}
+.img-card img {
+    width: 100%;
+    height: auto;
 }
 /*----- footer -----*/
 footer {
