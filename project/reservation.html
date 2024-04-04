@@ -65,14 +65,49 @@
             </picture>
         </div>
         <div id="reservepage-card">
-            <h3 class="reservepage-msg">Explore Cozumel and start to create unforgettable memories</h3>
-            <h4 class="reservepage-msg">Book your scooter now!</h4>
+            <h2 class="reservepage-msg">Explore Cozumel and start to create unforgettable memories</h2>
+            <h3 class="reservepage-msg">Book your scooter now!</h3>
         </div>
     </div>
 
-    <main>
-        
-
+    <main class="reserve-grid">
+        <div class="reserve-form">
+            <h2 class="title">Make a Reservation</h2>
+            <form method="get" action="thankyou.html"> <!-- create the actual page -->
+                <fieldset>
+                    <legend>Your Scoots</legend>
+                    <label class="sbs">Pick-up Date* <input type="date" id="pickupdate" name="pickupdate" required></label>
+                    <label class="sbs">Pick-up Time* <input type="time" id="pickuptime" name="pickuptime" required></label>
+                    <label class="sbs">Return Date* <input type="date" id="returndate" name="returndate" required></label>
+                    <label class="sbs">Return Time* <input type="time" id="returntime" name="returntime" required></label>
+                    <label class="sbs">Scooter Type* 
+                        <select id="scootertype" name="scootertype" required>
+                            <option value="hondametro">Honda Metropolitan</option>
+                            <option value="hondadio">Honda Dio</option>
+                            <option value="hondapcz">Honda PCX</option>
+                            <option value="hondapioneer">Honda Pioneed</option>
+                            <option value="wangler2">Jeep Wangler 2 Doors</option>
+                            <option value="wangler4">Jeep Wangler 4 Doors</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label class="top">Number of Scooters* <input type="number" id="numofscooters" name="numofscooters" min="1" max="10" required></label>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Email* <input type="email" id="email" name="email" required></label>
+                    <label class="top">Phone* <input type="tel" id="phone" name="phone" placeholder="12345678" required></label>
+                    <label class="top">Home State or Country* <input type="text" id="address" name="address" required></label>
+                    <label class="top">Cruise Line (if applicable) 
+                        <input type="text" id="cruiseline" name="cruiseline">
+                    </label>
+                    <label class="top">Special Accomodation or Comments <textarea id="details" name="details" placeholder="Let us know if you have any special need or comments."></textarea></label>
+                </fieldset>
+                <input type="hidden" name="date" id="date" value="">
+                <input type="submit" value="Book Your Scoots" class="submitBtn">
+            </form>
+        </div>
     </main>
 
     <footer>
