@@ -285,6 +285,11 @@ input:checked + .slider:before {
     background-color: var(--primary-color);
     padding: 20px;
 }
+.weather-card {
+    border: 1px solid var(--third-color);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+}
 .title {
     padding-bottom: 10px;
     padding-top: 10px;
