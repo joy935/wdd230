@@ -403,6 +403,18 @@ form input.submitBtn {
 .submitBtn:hover {
     background-color: var(--accent1-color);
 }
+#rental-info {
+    line-height: 30px;
+}
+#rental-aggreement {
+    background-color: var(--accent1-color);
+    padding-left: 20px;
+    border-radius: 4px;
+}
+#rental-locations {
+    padding-left: 20px;
+    margin-top: 20px;
+}
 /*---------- RENTALS PAGE ----------*/
 /*---------- CONTACT PAGE ----------*/
 /*---------- THANK YOU PAGE ----------*/
