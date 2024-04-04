@@ -57,4 +57,13 @@
     .reservepage-msg {
         font-size: 35px;
     }
+    .reserve-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    #reservepage-card {
+        top: 1rem;
+    }
 }
