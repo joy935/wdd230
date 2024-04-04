@@ -63,4 +63,7 @@
         padding: 1rem;
         gap: 1rem;
     }
+    #rental-locations {
+        text-align: center;
+    }
 }
