@@ -521,6 +521,7 @@ table tbody tr {
     border: 1px solid var(--secondary-color);
     padding: 8px;
     margin: 4px;
+    font-size: 16px;
 }
 .table-title {
     font-family: 'Kaushan Script', cursive;
