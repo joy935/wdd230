@@ -71,7 +71,7 @@
                 "halfday": "$60",
                 "fullday": "$85"
             },
-            "walking": {
+            "walkin": {
                 "halfday": "$70",
                 "fullday": "$90"
             },

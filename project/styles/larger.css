@@ -66,4 +66,10 @@
     #rental-locations {
         text-align: center;
     }
+
+    /* RENTALS PAGE */
+    .rentals-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
