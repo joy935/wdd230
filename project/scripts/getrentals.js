@@ -33,13 +33,17 @@ const displayRentals = (rentals) => {
         image.setAttribute('target', '_blank');
         image.classList.add('rentals-image');
         rentalType.textContent = `${rental.rentaltype}`;
+        rentalType.classList.add('rentals-info');
+        numberPerson.classList.add('rentals-info');
         if (rental.numberperson > 1) {
             numberPerson.textContent = `${rental.numberperson} persons`;
         } else {
             numberPerson.textContent = `${rental.numberperson} person`;
         }
         milleage.textContent = `✔️ Unlimited milleage`;
+        milleage.classList.add('rentals-info');
         insurance.textContent = `✔️ Damage insurance included`;
+        insurance.classList.add('rentals-info');
         pricehalfday.textContent = `Half Day: ${rental.walkin.halfday}`;
         pricehalfday.classList.add('pricehd');
         pricefullday.textContent = `Full Day: ${rental.walkin.fullday}`;

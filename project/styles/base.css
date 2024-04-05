@@ -438,8 +438,13 @@ form input.submitBtn {
     text-align: right;
     font-weight: bold;
     font-size: 18px;
+    padding-right: 20px;
 }
-.rentals-img {
+.rentals-image {
+    margin: 0 auto;
+}
+.rentals-info {
+    padding-left: 20px;
 }
 
 /*---------- CONTACT PAGE ----------*/
