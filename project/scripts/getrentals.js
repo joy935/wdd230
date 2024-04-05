@@ -31,6 +31,7 @@ const displayRentals = (rentals) => {
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
         image.setAttribute('target', '_blank');
+        image.classList.add('rentals-image');
         rentalType.textContent = `${rental.rentaltype}`;
         if (rental.numberperson > 1) {
             numberPerson.textContent = `${rental.numberperson} persons`;

@@ -422,6 +422,9 @@ form input.submitBtn {
     padding: 20px;
 }
 /*---------- RENTALS PAGE ----------*/
+#rentals-page {
+    padding: 10px;
+}
 .rentals-card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -429,6 +432,14 @@ form input.submitBtn {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    margin-bottom: 20px;
+}
+.pricefd, .pricehd {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+}
+.rentals-img {
 }
 
 /*---------- CONTACT PAGE ----------*/
