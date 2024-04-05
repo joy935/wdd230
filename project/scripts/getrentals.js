@@ -1,0 +1,1 @@
+const urlrentals = "https://joy935.github.io/wdd230/project/data/rentals.json";
