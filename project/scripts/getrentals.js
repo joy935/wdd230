@@ -24,6 +24,7 @@ const displayRentals = (rentals) => {
         let pricefullday = document.createElement('p');
 
         card.setAttribute('max-width', '300px');
+        card.classList.add('rentals-card');
 
         image.setAttribute('src', rental.image);
         image.setAttribute('alt', `Logo of ${rental.rentaltype}`);
