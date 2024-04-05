@@ -426,7 +426,7 @@ form input.submitBtn {
     padding: 10px;
     text-align: center;
 }
-#page-title {
+.page-title {
     padding: 20px 0 20px 0;
     font-size: 30px;
 }
