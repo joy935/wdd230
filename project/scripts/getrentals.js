@@ -17,17 +17,17 @@ const displayRentals = (rentals) => {
         let card = document.createElement('section');
         let image = document.createElement('img');
         let rentalType = document.createElement('h3');
-        let numberPerson = document.createElement('p');
+        // let numberPerson = document.createElement('p');
 
         card.setAttribute('max-width', '300px');
 
         image.setAttribute('src', rental.image);
-        image.setAttribute('alt', `Logo of ${rental.rental-type}`);
+        image.setAttribute('alt', `Logo of ${rental.rentaltype}`);
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
         image.setAttribute('target', '_blank');
-        console.log(rental.rentalType);
-        // rentalType.textContent = `${rental.rentalType}`;
+        console.log(rental.rentaltype);
+        rentalType.textContent = `${rental.rentaltype}`;
         // numberPerson.textContent = `${rental.numberPerson}`;
 
         card.appendChild(image);

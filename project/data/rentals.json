@@ -30,7 +30,7 @@
             "rentaltype": "Honda PCX 150 Scooter",
             "reservation": {
                 "halfday": "$40",
-                "full-day": "$50"
+                "fullday": "$50"
             },
             "walkin": {
                 "halfday": "$45",
@@ -43,7 +43,7 @@
             "rentaltype": "Honda Pioneer ATV",
             "reservation": {
                 "halfday": "$50",
-                "full-day": "$70"
+                "fullday": "$70"
             },
             "walkin": {
                 "halfday": "$60",
