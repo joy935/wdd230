@@ -422,6 +422,7 @@ form input.submitBtn {
     padding: 20px;
 }
 /*---------- RENTALS PAGE ----------*/
+/* responsive rentals cards */
 #rentals-grid {
     padding: 10px;
     text-align: center;
@@ -453,4 +454,41 @@ form input.submitBtn {
     padding-left: 20px;
 }
 
+/* resposive table */
+.rentals-table {
+    overflow-x: auto;
+}
+table {
+    margin: 0 auto;
+    /* border: 1px solid var(--secondary-color); */
+    /* box-shadow: 0 0 10px #000; */
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    max-width: 600px; /* adapt if necessary */
+    padding: .5rem;
+}
+caption {
+    padding-bottom: 10px;
+    caption-side: top;
+    font-size: 1rem;
+}
+
+th, td {
+    padding:4px 11px;
+    text-align: center;
+}
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 17px;
+    border: 1px solid var(--primary-color);
+    padding: 6px 22px;
+}
+td {
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+}
+tbody tr:nth-child(even) {
+    background-color: var(--accent1-color);
+}
 /*---------- CONTACT PAGE ----------*/
