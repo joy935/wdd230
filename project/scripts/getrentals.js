@@ -1,6 +1,6 @@
 const urlrentals = "https://joy935.github.io/wdd230/project/data/rentals.json";
 
-const rentals = document.querySelector('#rentals');
+const rentalsInfo = document.querySelector('#rentals');
 
 const getRentals = async () => {
     try {
@@ -17,7 +17,9 @@ const displayRentals = (rentals) => {
         let card = document.createElement('section');
         let image = document.createElement('img');
         let rentalType = document.createElement('h3');
-        // let numberPerson = document.createElement('p');
+        let numberPerson = document.createElement('p');
+        let milleage = document.createElement('p');
+        let insurance = document.createElement('p');
 
         card.setAttribute('max-width', '300px');
 
@@ -26,15 +28,22 @@ const displayRentals = (rentals) => {
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
         image.setAttribute('target', '_blank');
-        console.log(rental.rentaltype);
         rentalType.textContent = `${rental.rentaltype}`;
-        // numberPerson.textContent = `${rental.numberPerson}`;
+        if (rental.numberperson > 1) {
+            numberPerson.textContent = `${rental.numberperson} persons`;
+        } else {
+            numberPerson.textContent = `${rental.numberperson} person`;
+        }
+        milleage.textContent = `Unlimited milleage`;
+        insurance.textContent = `Damage insurance included`;
 
         card.appendChild(image);
-        // card.appendChild(rentalType);
-        // card.appendChild(numberPerson);
+        card.appendChild(rentalType);
+        card.appendChild(numberPerson);
+        card.appendChild(milleage);
+        card.appendChild(insurance);
 
-        rentals.appendChild(card);
+        rentalsInfo.appendChild(card);
     })
 }
 
