@@ -416,6 +416,10 @@ form input.submitBtn {
     padding-left: 20px;
     margin-top: 20px;
 }
+/*---------- THANK YOU PAGE ----------*/
+.thankyou-msg {
+    text-align: center;
+    padding: 20px;
+}
 /*---------- RENTALS PAGE ----------*/
 /*---------- CONTACT PAGE ----------*/
-/*---------- THANK YOU PAGE ----------*/
