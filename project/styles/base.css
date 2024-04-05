@@ -422,11 +422,13 @@ form input.submitBtn {
     padding: 20px;
 }
 /*---------- RENTALS PAGE ----------*/
-#rentals-page {
+#rentals-grid {
     padding: 10px;
+    text-align: center;
 }
 #page-title {
     padding: 20px 0 20px 0;
+    font-size: 30px;
 }
 .rentals-card {
     display: grid;
@@ -435,7 +437,8 @@ form input.submitBtn {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin: 20px 20px;
+    max-width: 500px;
 }
 .pricefd, .pricehd {
     text-align: right;
