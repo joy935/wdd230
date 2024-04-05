@@ -460,8 +460,8 @@ form input.submitBtn {
 }
 table {
     margin: 0 auto;
-    /* border: 1px solid var(--secondary-color); */
-    /* box-shadow: 0 0 10px #000; */
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 10px #000;
     border-collapse: collapse;
     font-size: 0.9rem;
     max-width: 600px; /* adapt if necessary */
@@ -479,7 +479,7 @@ th, td {
 }
 th {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--third-color);
     font-size: 17px;
     border: 1px solid var(--primary-color);
     padding: 6px 22px;
@@ -493,39 +493,43 @@ tbody tr:nth-child(odd) {
 }
 /* for smaller view only */
 @media only screen and (max-width: 600px) {
-thead {
-    display: none;
-}
-tbody {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px; /* adjust */
-}
-table tbody tr, table tbody td {
-    display: block;
-    border: 0;
-}
-table tbody td {
-    padding: 4px; /* adjust */
-    font-weight: bold;
-}
-table tbody td:before {
-    content:attr(data-name);
-    display: inline-block;
-    font-weight: normal;
-    margin-right: 5px;
-}
-table tbody tr {
-    position: relative;
-    width: calc(100% - 8px); /* adjust */
-    border: 1px solid var(--secondary-color);
-    padding: 8px;
-    margin: 4px;
-    font-size: 16px;
-}
-.table-title {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
-}
+    table {
+        border: none;
+        box-shadow: none;
+    }
+    thead {
+        display: none;
+    }
+    tbody {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4px; /* adjust */
+    }
+    table tbody tr, table tbody td {
+        display: block;
+        border: 0;
+    }
+    table tbody td {
+        padding: 4px; /* adjust */
+        font-weight: bold;
+    }
+    table tbody td:before {
+        content:attr(data-name);
+        display: inline-block;
+        font-weight: normal;
+        margin-right: 5px;
+    }
+    table tbody tr {
+        position: relative;
+        width: calc(100% - 8px); /* adjust */
+        border: 1px solid var(--secondary-color);
+        padding: 8px;
+        margin: 4px;
+        font-size: 16px;
+    }
+    .table-title {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 20px;
+    }
 }
 /*---------- CONTACT PAGE ----------*/

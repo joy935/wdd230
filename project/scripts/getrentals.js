@@ -20,8 +20,8 @@ const displayRentals = (rentals) => {
         let numberPerson = document.createElement('p');
         let milleage = document.createElement('p');
         let insurance = document.createElement('p');
-        let pricehalfday = document.createElement('p');
-        let pricefullday = document.createElement('p');
+        let pricehalfday = document.createElement('h4');
+        let pricefullday = document.createElement('h4');
 
         card.setAttribute('max-width', '300px');
         card.classList.add('rentals-card');
