@@ -422,6 +422,13 @@ form input.submitBtn {
     padding: 20px;
 }
 /*---------- RENTALS PAGE ----------*/
-
+.rentals-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
 
 /*---------- CONTACT PAGE ----------*/
