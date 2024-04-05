@@ -10,7 +10,8 @@
                 "half-day": "$25",
                 "full-day": "$35"
             },
-            "number-person": "1"
+            "number-person": "1",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondametroblue400.webp"
         },
         {
             "rental-type": "Honda Dio Scooter",
@@ -22,7 +23,8 @@
                 "half-day": "$35",
                 "full-day": "$45"
             },
-            "number-person": "2"
+            "number-person": "2",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondadiogreen400.webp"
         },
         {
             "rental-type": "Honda PCX 150 Scooter",
@@ -34,7 +36,8 @@
                 "half-day": "$45",
                 "full-day": "$55"
             },
-            "number-person": "2"
+            "number-person": "2",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondapcx150white400.webp"
         },
         {
             "rental-type": "Honda Pioneer ATV",
@@ -46,7 +49,8 @@
                 "half-day": "$60",
                 "full-day": "$80"
             },
-            "number-person": "4"
+            "number-person": "4",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondapioneerred400.webp"
         },
         {
             "rental-type": "Jeep Wrangler 4 Doors with A/C",
@@ -58,7 +62,8 @@
                 "half-day": "$85",
                 "full-day": "$125"
             },
-            "number-person": "5"
+            "number-person": "5",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/jeepwrangler4doorswhite400.webp"
         },
         {
             "rental-type": "Jeep Wrangler 2 Doors",
@@ -70,7 +75,8 @@
                 "half-day": "$70",
                 "full-day": "$90"
             },
-            "number-person": "4"
+            "number-person": "4",
+            "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/jeepwrangler2doorsred400.webp"
         }
     ]
 }
