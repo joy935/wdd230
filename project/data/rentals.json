@@ -1,0 +1,76 @@
+{
+    "rentals": [
+        {
+            "rental-type": "Honda Metro Scooter",
+            "reservation": {
+                "half-day": "$20",
+                "full-day": "$30"
+            },
+            "walk-in": {
+                "half-day": "$25",
+                "full-day": "$35"
+            },
+            "number-person": "1"
+        },
+        {
+            "rental-type": "Honda Dio Scooter",
+            "reservation": {
+                "half-day": "$30",
+                "full-day": "$40"
+            },
+            "walk-in": {
+                "half-day": "$35",
+                "full-day": "$45"
+            },
+            "number-person": "2"
+        },
+        {
+            "rental-type": "Honda PCX 150 Scooter",
+            "reservation": {
+                "half-day": "$40",
+                "full-day": "$50"
+            },
+            "walk-in": {
+                "half-day": "$45",
+                "full-day": "$55"
+            },
+            "number-person": "2"
+        },
+        {
+            "rental-type": "Honda Pioneer ATV",
+            "reservation": {
+                "half-day": "$50",
+                "full-day": "$70"
+            },
+            "walk-in": {
+                "half-day": "$60",
+                "full-day": "$80"
+            },
+            "number-person": "4"
+        },
+        {
+            "rental-type": "Jeep Wrangler 4 Doors with A/C",
+            "reservation": {
+                "half-day": "$70",
+                "full-day": "$100"
+            },
+            "walk-in": {
+                "half-day": "$85",
+                "full-day": "$125"
+            },
+            "number-person": "5"
+        },
+        {
+            "rental-type": "Jeep Wrangler 2 Doors",
+            "reservation": {
+                "half-day": "$60",
+                "full-day": "$85"
+            },
+            "walk-in": {
+                "half-day": "$70",
+                "full-day": "$90"
+            },
+            "number-person": "4"
+        }
+    ]
+}
