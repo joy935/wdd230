@@ -10,7 +10,7 @@
                 "halfday": "$25",
                 "fullday": "$35"
             },
-            "numberperson": "1",
+            "numberperson": 1,
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondametroblue400.webp"
         },
         {
@@ -23,7 +23,7 @@
                 "halfday": "$35",
                 "fullday": "$45"
             },
-            "numberperson": "2",
+            "numberperson": 2,
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondadiogreen400.webp"
         },
         {
@@ -36,7 +36,7 @@
                 "halfday": "$45",
                 "fullday": "$55"
             },
-            "numberperson": "2",
+            "numberperson": 2,
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondapcxwhite400.webp"
         },
         {
@@ -49,7 +49,7 @@
                 "halfday": "$60",
                 "fullday": "$80"
             },
-            "numberperson": "4",
+            "numberperson": 4,
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/hondapioneerred400.webp"
         },
         {
@@ -62,7 +62,7 @@
                 "halfday": "$85",
                 "fullday": "$125"
             },
-            "numberperson": "5",
+            "numberperson": 5,
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/jeepwrangler4doorswhite400.webp"
         },
         {
@@ -75,7 +75,7 @@
                 "halfday": "$70",
                 "fullday": "$90"
             },
-            "numberperson": "4",
+            "numberperson": 4,
             "image": "https://raw.githubusercontent.com/joy935/wdd230/main/project/images/jeepwrangler2doorsred400.webp"
         }
     ]
