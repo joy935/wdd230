@@ -39,7 +39,9 @@ const displayRentals = (rentals) => {
         milleage.textContent = `Unlimited milleage`;
         insurance.textContent = `Damage insurance included`;
         pricehalfday.textContent = `Half Day: ${rental.walkin.halfday}`;
+        pricehalfday.classList.add('pricehd');
         pricefullday.textContent = `Full Day: ${rental.walkin.fullday}`;
+        pricefullday.classList.add('pricefd');
 
         card.appendChild(image);
         card.appendChild(rentalType);
