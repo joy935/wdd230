@@ -488,7 +488,40 @@ td {
     text-align: center;
     border: 1px solid var(--accent1-color);
 }
-tbody tr:nth-child(even) {
+/* tbody tr:nth-child(even) {
     background-color: var(--accent1-color);
+} */
+/* for smaller view only */
+thead {
+    display: none;
+}
+tbody {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px; /* adjust */
+}
+table tbody tr, table tbody td {
+    display: block;
+    border: 0;
+}
+table tbody td {
+    padding: 4px; /* adjust */
+    font-weight: bold;
+}
+table tbody td:before {
+    content:attr(data-name);
+    display: inline-block;
+    font-weight: normal;
+}
+table tbody tr {
+    position: relative;
+    width: calc(100% - 8px); /* adjust */
+    border: 1px solid var(--secondary-color);
+    padding: 8px;
+    margin: 4px;
+}
+.table-title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
 }
 /*---------- CONTACT PAGE ----------*/
