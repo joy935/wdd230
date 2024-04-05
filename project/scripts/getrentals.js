@@ -20,6 +20,8 @@ const displayRentals = (rentals) => {
         let numberPerson = document.createElement('p');
         let milleage = document.createElement('p');
         let insurance = document.createElement('p');
+        let pricehalfday = document.createElement('p');
+        let pricefullday = document.createElement('p');
 
         card.setAttribute('max-width', '300px');
 
@@ -36,12 +38,16 @@ const displayRentals = (rentals) => {
         }
         milleage.textContent = `Unlimited milleage`;
         insurance.textContent = `Damage insurance included`;
+        pricehalfday.textContent = `Half Day: ${rental.walkin.halfday}`;
+        pricefullday.textContent = `Full Day: ${rental.walkin.fullday}`;
 
         card.appendChild(image);
         card.appendChild(rentalType);
         card.appendChild(numberPerson);
         card.appendChild(milleage);
         card.appendChild(insurance);
+        card.appendChild(pricehalfday);
+        card.appendChild(pricefullday);
 
         rentalsInfo.appendChild(card);
     })
