@@ -488,10 +488,11 @@ td {
     text-align: center;
     border: 1px solid var(--accent1-color);
 }
-/* tbody tr:nth-child(even) {
+tbody tr:nth-child(odd) {
     background-color: var(--accent1-color);
-} */
+}
 /* for smaller view only */
+@media only screen and (max-width: 600px) {
 thead {
     display: none;
 }
@@ -512,6 +513,7 @@ table tbody td:before {
     content:attr(data-name);
     display: inline-block;
     font-weight: normal;
+    margin-right: 5px;
 }
 table tbody tr {
     position: relative;
@@ -523,5 +525,6 @@ table tbody tr {
 .table-title {
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
+}
 }
 /*---------- CONTACT PAGE ----------*/
