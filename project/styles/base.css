@@ -533,15 +533,28 @@ tbody tr:nth-child(odd) {
     }
 }
 /*---------- CONTACT PAGE ----------*/
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
 #contact-form {
     padding: 20px;
     margin: 20px;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 400px;
 }
 #message {
    min-width: 400px;
    height: 200px;
+}
+#contact-cards {    
+    padding-left: 20px;
+    margin-top: 20px;
 }
 .contact-card {
     padding: 20px;
