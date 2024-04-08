@@ -538,8 +538,6 @@ tbody tr:nth-child(odd) {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
     padding: 10px;
-    text-align: center;
-    align-items: center;
 }
 #contact-form {
     padding: 20px;
@@ -549,11 +547,11 @@ tbody tr:nth-child(odd) {
     min-width: 400px;
 }
 #message {
-   min-width: 400px;
+   max-width: 380px;
    height: 200px;
 }
 #contact-cards {    
-    padding-left: 20px;
+    padding-left: 10px;
     margin-top: 20px;
 }
 .contact-card {
@@ -562,8 +560,14 @@ tbody tr:nth-child(odd) {
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.contact-card p, .rental-location p {
+    padding: 3px;
+}
+.contact-card h3, .rental-location h3 {
+    padding-top: 10px;
+}
 #rental-locations {
-    padding-left: 20px;
+    padding-left: 10px;
     margin-top: 20px;
 }
 .rental-location {
