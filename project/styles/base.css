@@ -576,5 +576,5 @@ tbody tr:nth-child(odd) {
    height: 200px;
 }
 .contact-card p, .rental-location p {
-    padding: 3px;
+    padding: 5px;
 }
