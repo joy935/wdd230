@@ -403,10 +403,10 @@ form label.top input:required:valid {
 }
 form input.submitBtn {
     border: none;
-    border-radius: 4px;
+    border-radius: 100px;
     background-color: var(--primary-color);
     color: var(--third-color);
-    padding: .75rem 1.5rem;
+    padding: 10px 20px;
     margin: 0 0 2rem 2%;
     width: 90%;
     max-width: 25rem;
