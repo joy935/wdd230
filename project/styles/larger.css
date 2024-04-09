@@ -52,7 +52,10 @@
     .author {
         grid-column: 2 / 4;
     }
-
+    /* main */
+    .weather-card, #carrousel-card, #special-offer {
+        margin-top: 20px;
+    }
     /* RESERVATION PAGE */
     .reservepage-msg {
         font-size: 35px;
