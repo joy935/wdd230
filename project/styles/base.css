@@ -207,10 +207,6 @@ input:checked + .slider:before {
     border-radius: 100px;
     cursor: pointer;
 }
-/* infos about Scoots */
-#special-offer p {
-    padding: 10px;
-}
 /*----- carrousel -----*/
 .carrousel-box {
     max-width: 400px;
@@ -285,11 +281,15 @@ input:checked + .slider:before {
     gap: 10px;
     padding: 10px;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
 }
 #special-offer {
     background-color: var(--primary-color);
     padding: 20px;
+    border-radius: 30px;
+}
+#special-offer p {
+    padding: 10px;
 }
 .weather-card {
     border: 1px solid var(--third-color);
