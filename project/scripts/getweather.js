@@ -1,7 +1,7 @@
 const currentTemp = document.getElementById('current-temp');
 const currentHumidity = document.getElementById('current-humidity');
 const currentIcon = document.getElementById('current-icon');
-const weatherDesc = document.querySelector('figcaption');
+const weatherDesc = document.getElementById('current-desc');
 
 const tomorrowTemp = document.getElementById('tomorrow-temp');
 const tomorrowIcon = document.getElementById('tomorrow-icon');
