@@ -8,7 +8,7 @@ const specialoffer = document.querySelector('#special-offer');
 // function to toggle dark mode
 function activateDarkMode() {
     // check if the elements exist before attempting to apply changes
-    if (body) {
+    if (body && h1 && banner && reservemsg && specialoffer) {
         // if dark mode is enabled
         if (darkMode.checked) {
             body.classList.add('dark-style');
