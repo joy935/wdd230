@@ -4,6 +4,8 @@ const currentIcon = document.getElementById('current-icon');
 const weatherDesc = document.querySelector('figcaption');
 
 const tomorrowTemp = document.getElementById('tomorrow-temp');
+const tomorrowIcon = document.getElementById('tomorrow-icon');
+const tomorrowDesc = document.getElementById('tomorrow-desc');
 
 const mltDays = "https://api.openweathermap.org/data/2.5/forecast?lat=20.51&lon=-86.95&units=imperial&&appid=710bb94f8ac1a0695f7197b282e4ba48";
 
@@ -37,8 +39,8 @@ function displayWeather(data) {
         let desc = data.list[0].weather[0].description;
         let icon = data.list[0].weather[0].icon;
 
-        currentTemp.innerHTML = `Temperature ${round(temp)}&deg;F`;
-        currentHumidity.innerHTML = `Humidity ${humidity}%`;
+        currentTemp.innerHTML = `Temperature: ${round(temp)}&deg;F`;
+        currentHumidity.innerHTML = `Humidity: ${humidity}%`;
         weatherDesc.innerHTML = `${capitalize(desc)}`;
         currentIcon.setAttribute('alt', desc);
         currentIcon.setAttribute('loading', 'lazy');
@@ -56,9 +58,16 @@ function getNextDay(data) {
         const itemDate = new Date(item.dt_txt);
         return itemDate.getDate() === nextDay.getDate() && itemDate.getHours() === 15;
     });
+    let tomorrowdesc = tomorrowForecast[0].weather[0].description;
+    let tomorrowicon = tomorrowForecast[0].weather[0].icon;
+    
     if (tomorrowForecast[0].main.temp !== undefined) {
         const temp = tomorrowForecast[0].main.temp;
-        tomorrowTemp.innerHTML = `Temperature at 3PM : ${round(temp)}&deg;F`;
+        tomorrowTemp.innerHTML = `Temperature at 3PM: ${round(temp)}&deg;F`;
+        tomorrowDesc.innerHTML = `${capitalize(tomorrowdesc)}`;
+        tomorrowIcon.setAttribute('alt', tomorrowdesc);
+        tomorrowIcon.setAttribute('loading', 'lazy');
+        tomorrowIcon.src = `https://openweathermap.org/img/w/${tomorrowicon}.png`;
     } else {
         console.error("Temperature at 3PM: N/A");
     }
