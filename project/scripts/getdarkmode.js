@@ -1,5 +1,5 @@
 const darkMode = document.querySelector('.switch input[type="checkbox"]');
-const body = document.querySelector('body');
+let body = document.querySelector('body');
 const h1 = document.querySelector('h1');
 const banner = document.querySelector('#hero-banner');
 const reservemsg = document.querySelector('.reserve-msg');
@@ -8,7 +8,7 @@ const specialoffer = document.querySelector('#special-offer');
 // function to toggle dark mode
 function activateDarkMode() {
     // check if the elements exist before attempting to apply changes
-    if (body && h1 && banner && reservemsg && specialoffer) {
+    if (body) {
         // if dark mode is enabled
         if (darkMode.checked) {
             body.classList.add('dark-style');
