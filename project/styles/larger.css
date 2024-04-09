@@ -56,6 +56,7 @@
     .weather-card, #carrousel-card, #special-offer {
         margin-top: 20px;
     }
+
     /* RESERVATION PAGE */
     .reservepage-msg {
         font-size: 35px;
@@ -66,7 +67,6 @@
         padding: 1rem;
         gap: 1rem;
     }
-
     /* RENTALS PAGE */
     .rentals-grid {
         display: grid;

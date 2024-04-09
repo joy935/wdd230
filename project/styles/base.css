@@ -428,6 +428,19 @@ form input.submitBtn {
     padding-left: 20px;
     margin-top: 20px;
 }
+.img-illustration img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.img-illustration {
+    padding-top: 20px;
+    text-align: center;
+}
+.img-illustration h3 {
+    padding-bottom: 15px;
+}
 /*---------- THANK YOU PAGE ----------*/
 .thankyou-msg {
     text-align: center;
