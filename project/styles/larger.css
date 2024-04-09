@@ -63,9 +63,6 @@
         padding: 1rem;
         gap: 1rem;
     }
-    #rental-locations {
-        text-align: center;
-    }
 
     /* RENTALS PAGE */
     .rentals-grid {
@@ -74,5 +71,9 @@
     }
 
     /* responsive table */
-
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
