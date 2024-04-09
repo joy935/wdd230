@@ -207,6 +207,10 @@ input:checked + .slider:before {
     border-radius: 100px;
     cursor: pointer;
 }
+/* infos about Scoots */
+#special-offer p {
+    padding: 10px;
+}
 /*----- carrousel -----*/
 .carrousel-box {
     max-width: 400px;
