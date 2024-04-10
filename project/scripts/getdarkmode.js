@@ -1,5 +1,6 @@
 const darkMode = document.querySelector('.switch input[type="checkbox"]');
 let body = document.querySelector('body');
+const h1 = document.querySelector('h1');
 
 // function to toggle dark mode
 function activateDarkMode() {
