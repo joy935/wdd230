@@ -4,7 +4,6 @@ const h1 = document.querySelector('h1');
 const banner = document.querySelector('#hero-banner');
 const reservemsg = document.querySelector('.reserve-msg');
 const specialoffer = document.querySelector('#special-offer');
-const tbodyOddRows = document.querySelectorAll('tbody tr:nth-child(odd)');
 
 // function to toggle dark mode
 function activateDarkMode() {
@@ -19,9 +18,6 @@ function activateDarkMode() {
             reservemsg.style.backgroundColor = '#333333';
             specialoffer.style.color = 'white';
             specialoffer.style.backgroundColor = '#333333';
-            tbodyOddRows.forEach(row => {
-                row.style.backgroundColor = '#333333';
-            });
         }
         // if dark mode is disabled
         else {
