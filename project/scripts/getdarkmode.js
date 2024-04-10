@@ -21,7 +21,7 @@ function activateDarkMode() {
             specialoffer.style.backgroundColor = '#333333';
             tbodyOddRows.forEach(row => {
                 row.style.backgroundColor = '#333333';
-            )}
+            });
         }
         // if dark mode is disabled
         else {
