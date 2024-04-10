@@ -53,7 +53,8 @@ function displayWeather(data) {
 
 function getNextDay(data) {
     const todayDate = new Date(data.list[0].dt_txt);
-    const nextDay = new Date(todayDate +1);
+    const nextDay = new Date(todayDate);
+    nextDay.setDate(todayDate.getDate() + 1);
     const tomorrowForecast = data.list.filter(item => {
         const itemDate = new Date(item.dt_txt);
         return itemDate.getDate() === nextDay.getDate() && itemDate.getHours() === 15;
