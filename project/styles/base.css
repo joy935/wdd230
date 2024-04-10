@@ -366,17 +366,12 @@ form legend {
     margin: 0 1rem;
     padding: 0.5rem;
 }
-form legend.top {
-    font-weight: normal;
-    padding: 0;
-    padding-top: 0.5rem;
-}
-form label.top, form legend.top {
+form label.top {
     display: block;
     margin: 0.5rem 0;
     font-size: 1rem;
 }
-form label.top input, form legend.top input{
+form label.top input{
     display: block;
     font-size: 0.9rem;
     border: 1px solid var(--secondary-color);
