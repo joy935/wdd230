@@ -37,7 +37,7 @@ header {
 }
 #socialmedia-card {
     position: absolute;
-    top: 5rem;
+    top: 1rem;
     right: 1rem;
 }
 .sm-logo {
@@ -70,7 +70,7 @@ h1 {
 /*----- hamburger menu -----*/
 #menu {
     position: absolute;
-    top: 1rem;
+    top: 4.5rem;
     right: 1rem;
     font-size: 2rem;
     padding: 3px 7px 6px;
